@@ -1,0 +1,72 @@
+.hero {
+  color: $color-default-white;
+  background-color: $color-primary;
+}
+
+.hero__container {
+  display: flex;
+  justify-content: start;
+  column-gap: 70px;
+}
+
+.hero__flex-container {
+  display: flex;
+  align-items: center;
+}
+
+.hero__column-wrapper {
+  width: 270px;
+  font-family: "Alumni Sans";
+  font-size: 54px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 54px;
+  text-align: right;
+  text-transform: uppercase;
+}
+
+.hero__city {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.hero__title {
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 92px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 110px;
+  letter-spacing: 4.6px;
+  text-transform: uppercase;
+}
+
+.hero__list {
+  font-family: "Roboto Condensed";
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+  text-align: right;
+}
+
+.hero__button {
+  display: block;
+  margin-left: auto;
+  width: 230px;
+  padding: 19px 56px;
+  border: 2px solid $color-default-white;
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 12px; /* 100% */
+  letter-spacing: 0.6px;
+  text-align: center;
+  text-transform: uppercase;
+
+  @include vp-mobile {
+    margin-left: unset;
+  }
+}

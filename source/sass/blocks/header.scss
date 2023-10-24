@@ -1,0 +1,30 @@
+.header {
+  color: $color-default-white;
+  background-color: $color-primary;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 86px;
+}
+
+.header__image {
+  @include vp-tablet {
+    width: 112px;
+    height: 24px;
+  }
+}
+
+.header__contact {
+  color: $color-default-white;
+  font-family: "Roboto Condensed";
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+
+  @include vp-tablet {
+    font-size: 24px;
+  }
+}
