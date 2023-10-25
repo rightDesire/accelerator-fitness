@@ -3,12 +3,11 @@
   padding: 19px 44px;
 
   color: $color-primary;
-
   background-color: $color-transparent;
   border: none;
   cursor: pointer;
 
-  transition: opacity $trans-default;
+  // transition: opacity $trans-default;
 
   &--red {
     background-color: $color-torch-red;
@@ -21,6 +20,6 @@
   }
 
   @include hover-focus {
-    opacity: 0.8;
+    // opacity: 0.8;
   }
 }

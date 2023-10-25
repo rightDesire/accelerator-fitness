@@ -179,6 +179,18 @@
   text-transform: uppercase;
   word-wrap: break-word;
 
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    color: $color-additional;
+    background-color: $color-default-white;
+  }
+
+  &:active {
+    color: $color-primary;
+  }
+
   @include vp-1365 {
     width: 185px;
     padding: 20px 20px;
