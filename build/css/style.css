@@ -1227,6 +1227,7 @@ button,
   -webkit-column-gap: 70px;
      -moz-column-gap: 70px;
           column-gap: 70px;
+  padding-bottom: 120px;
 }
 @media (max-width: 1365px) {
   .hero__container {
@@ -1236,6 +1237,7 @@ button,
     -webkit-column-gap: 30px;
        -moz-column-gap: 30px;
             column-gap: 30px;
+    padding-bottom: 100px;
   }
 }
 @media (max-width: 767px) {
@@ -1450,6 +1452,265 @@ button,
 @media (max-width: 767px) {
   .hero__img-wrapper img {
     display: none;
+  }
+}
+
+.gym {
+  position: relative;
+  color: #102654;
+  font-family: "Roboto Condensed";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+.gym__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-column-gap: 145px;
+     -moz-column-gap: 145px;
+          column-gap: 145px;
+  padding-top: 120px;
+  padding-bottom: 235px;
+}
+@media (max-width: 1365px) {
+  .gym__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 183px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__container {
+    padding-top: 70px;
+    padding-bottom: 40px;
+  }
+}
+
+.gym__column-wrapper {
+  -ms-flex-negative: 1;
+      flex-shrink: 1;
+}
+@media (max-width: 1365px) {
+  .gym__column-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.gym__title {
+  word-wrap: break-word;
+  max-width: calc(100vw - 206px);
+  max-width: 335px;
+  min-width: 290px;
+  margin: 0;
+  margin-bottom: 25px;
+  font-family: "Alumni Sans";
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+}
+@media (max-width: 1365px) {
+  .gym__title {
+    max-width: calc(100vw - 90px);
+  }
+}
+@media (max-width: 767px) {
+  .gym__title {
+    max-width: calc(100vw - 30px);
+  }
+}
+@media (max-width: 1365px) {
+  .gym__title {
+    margin-bottom: 20px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__title {
+    margin-bottom: 13px;
+  }
+}
+
+.gym__size {
+  word-wrap: break-word;
+  max-width: calc(100vw - 206px);
+  max-width: 350px;
+  min-width: 290px;
+  margin: 0;
+  margin-bottom: 95px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 22px;
+}
+@media (max-width: 1365px) {
+  .gym__size {
+    max-width: calc(100vw - 90px);
+  }
+}
+@media (max-width: 767px) {
+  .gym__size {
+    max-width: calc(100vw - 30px);
+  }
+}
+@media (max-width: 1365px) {
+  .gym__size {
+    margin-bottom: 36px;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__size {
+    margin-bottom: 40px;
+  }
+}
+
+.gym__description {
+  max-width: 355px;
+  min-width: 290px;
+}
+@media (max-width: 1365px) {
+  .gym__description {
+    max-width: 502px;
+  }
+}
+
+.gym__equipment {
+  word-wrap: break-word;
+  max-width: calc(100vw - 206px);
+  max-width: 355px;
+  min-width: 290px;
+  margin: 0;
+  margin-bottom: 8px;
+}
+@media (max-width: 1365px) {
+  .gym__equipment {
+    max-width: calc(100vw - 90px);
+  }
+}
+@media (max-width: 767px) {
+  .gym__equipment {
+    max-width: calc(100vw - 30px);
+  }
+}
+@media (max-width: 1365px) {
+  .gym__equipment {
+    margin-bottom: 36px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__equipment {
+    margin-bottom: 50px;
+  }
+}
+
+.gym__crossfit {
+  word-wrap: break-word;
+  max-width: calc(100vw - 206px);
+  max-width: 355px;
+  min-width: 290px;
+  margin: 0;
+}
+@media (max-width: 1365px) {
+  .gym__crossfit {
+    max-width: calc(100vw - 90px);
+  }
+}
+@media (max-width: 767px) {
+  .gym__crossfit {
+    max-width: calc(100vw - 30px);
+  }
+}
+@media (max-width: 1365px) {
+  .gym__crossfit {
+    display: none;
+  }
+}
+
+@media (max-width: 1365px) {
+  .gym__img-wrapper {
+    width: 100%;
+  }
+}
+@media (max-width: 767px) {
+  .gym__img-wrapper {
+    width: 100vw;
+    min-width: 320px;
+  }
+}
+
+.gym__img-wrapper img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+@media (max-width: 1365px) {
+  .gym__img-wrapper img {
+    width: 100%;
+    height: 345px;
+  }
+}
+@media (max-width: 767px) {
+  .gym__img-wrapper img {
+    height: 313px;
+  }
+}
+
+.gym__video {
+  position: absolute;
+  top: 408px;
+  left: 50%;
+  -webkit-transform: translateX(-40%);
+      -ms-transform: translateX(-40%);
+          transform: translateX(-40%);
+  z-index: 1;
+}
+@media (max-width: 1365px) {
+  .gym__video {
+    top: unset;
+    bottom: 100px;
+    left: 50%;
+    width: 265px;
+    height: 167px;
+    -webkit-transform: translateX(-50%);
+        -ms-transform: translateX(-50%);
+            transform: translateX(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .gym__video {
+    position: static;
+    width: 100vw;
+    min-width: 320px;
+    margin-bottom: 70px;
+    -webkit-transform: unset;
+        -ms-transform: unset;
+            transform: unset;
   }
 }
 

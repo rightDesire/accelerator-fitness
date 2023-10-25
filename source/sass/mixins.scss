@@ -65,5 +65,18 @@
   background-image: $gradient-hero;
 }
 
+@mixin overflow {
+  word-wrap: break-word;
+  max-width: calc(100vw - 206px); //Так можно?
+
+  @include vp-1365 {
+    max-width: calc(100vw - 90px); //Так можно?
+  }
+
+  @include vp-767 {
+    max-width: calc(100vw - 30px); //Так можно?
+  }
+}
+
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта
