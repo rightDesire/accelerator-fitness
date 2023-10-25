@@ -38,25 +38,32 @@
 
 // Desktop first
 
-@mixin vp-desktop {
-  @media (max-width: $vp-desktop) {
+@mixin vp-1365 {
+  @media (max-width: ($vp-1366 - 1)) {
     @content;
   }
 }
 
-@mixin vp-tablet {
-  @media (max-width: $vp-tablet) {
+@mixin vp-767 {
+  @media (max-width: ($vp-768 - 1)) {
     @content;
   }
 }
 
-@mixin vp-mobile {
-  @media (max-width: $vp-mobile) {
-    @content;
-  }
-}
+// @mixin vp-319 {
+//   @media (max-width: ($vp-320 - 1)) {
+//     @content;
+//   }
+// }
 
 // ---------------------------------
+
+// Custom Mixins
+
+@mixin style-block {
+  color: $color-default-white;
+  background-image: $gradient-hero;
+}
 
 // не нужно добавлять свои миксины для ресета списков, обнуления кнопок и прочие
 // этим вы усложняете работу команды, проверку вашего кода и будущую поддержку проекта

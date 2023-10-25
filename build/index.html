@@ -21,39 +21,49 @@
     <div class="wrapper">
       <header class="header">
         <div class="header__container container">
-          <img class="header__image" width="120" height="26" src="img/content/logo.svg" alt="Логотип фитнес-центра SUPERGYM.">
+          <div class="header__img-wrapper">
+            <a class="header__link" href="index.html">
+              <img width="120" height="26" src="img/content/logo.svg" alt="Логотип фитнес-центра SUPERGYM.">
+            </a>
+          </div>
           <a class="header__contact" href="tel:+78005555555">8-800-555-55-55</a>
         </div>
       </header>
       <main>
+        <h1 class="visually-hidden">Фитнес-центр SUPERGYM.</h1>
         <section class="hero">
           <div class="hero__container container">
-            <h1 class="visually-hidden">Фитнес-центр в Омске.</h1>
+            <h2 class="visually-hidden">Основные усуги омского фитнес-центра.</h2>
             <div class="hero__flex-container">
-              <ul class="hero__list list">
-                <li class="hero__item">
-                  Тренажёрный зал
-                </li>
-                <li class="hero__item">
-                  Групповые занятия
-                </li>
-                <li class="hero__item">
-                  Кардио-зона
-                </li>
-              </ul>
-              <div class="hero__column-wrapper">
-                <p class="hero__city">омск</p>
-                <h2 class="hero__title">Фитнес <br> центр</h2>
-                <a class="hero__button btn" href="#subscription">Купить абонемент</a>
+              <div class="hero__row-wrapper">
+                <ul class="hero__list list">
+                  <li class="hero__item">
+                    Тренажёрный зал
+                  </li>
+                  <li class="hero__item">
+                    Групповые занятия
+                  </li>
+                  <li class="hero__item">
+                    Кардио-зона
+                  </li>
+                </ul>
+                <div class="hero__column-wrapper">
+                  <p class="hero__city">Омск</p>
+                  <h3 class="hero__title">Фитнес <br> центр</h3>
+                </div>
               </div>
+              <a class="hero__button btn" href="#subscription">Купить абонемент</a>
             </div>
-            <picture>
-              <source media="(max-width: 768px)" type="image/webp" srcset="img/content/hero-image-tablet@1x.webp 1x, img/content/hero-image-tablet@2x.webp 2x">
-              <source type="image/webp" srcset="img/content/hero-image-desktop@1x.webp 1x, img/content/hero-image-desktop@2x.webp 2x">
+            <div class="hero__img-wrapper">
+              <picture>
+                <source media="(max-width: 768px)" type="image/webp" srcset="img/content/hero-image-tablet@1x.webp 1x, img/content/hero-image-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/hero-image-desktop@1x.webp 1x, img/content/hero-image-desktop@2x.webp 2x">
 
-              <source media="(max-width: 768px)" type="image/jpg" srcset="img/content/hero-image-tablet@1x.jpg 1x, img/content/hero-image-tablet@2x.jpg 2x">
-              <img src="img/content/hero-image-desktop@1x.jpg" srcset="img/content/hero-image-desktop@2x.png 2x" width="500" height="524" alt="Модель фитнес-центра.">
-            </picture>
+                <source media="(max-width: 768px)" type="image/jpg" srcset="img/content/hero-image-tablet@1x.jpg 1x, img/content/hero-image-tablet@2x.jpg 2x">
+
+                <img src="img/content/hero-image-desktop@1x.jpg" srcset="img/content/hero-image-desktop@2x.png 2x" width="500" height="524" alt="Модель фитнес-центра.">
+              </picture>
+            </div>
           </div>
         </section>
       </main>

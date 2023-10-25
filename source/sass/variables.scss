@@ -22,6 +22,7 @@ $color-black-russian:               #030a1a;
 
 // Gradient
 
+$gradient-hero:              linear-gradient(90deg, rgba(28, 51, 116, 0.20) 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
 $crimson-to-blue:            linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
 $red-to-blue:                linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
 $blue-to-red:                conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
@@ -52,9 +53,9 @@ $trans-600:                         0.6s $tf-default;
 // Viewports
 // ---------------------------------
 
-$vp-mobile:                         320px;
-$vp-tablet:                         768px;
-$vp-desktop:                        1366px;
+$vp-320:                         320px;
+$vp-768:                         768px;
+$vp-1366:                        1366px;
 
 // Retina
 // ---------------------------------
