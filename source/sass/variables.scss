@@ -22,10 +22,10 @@ $color-black-russian:               #030a1a;
 
 // Gradient
 
-$gradient-hero:              linear-gradient(90deg, rgba(28, 51, 116, 0.20) 0%, #1C3477 0.01%, #1A3578 39.11%, #73184B 75.5%, #B4022A 100%);
-$crimson-to-blue:            linear-gradient(128deg, #D10A42 0%, #0041CA 45.58%);
-$red-to-blue:                linear-gradient(97deg, #ED0233 17.6%, #003EB7 95.31%);
-$blue-to-red:                conic-gradient(from 151deg at 16.03% 39.06%, #003D85 32.23633825778961deg, #B80027 313.3060026168823deg);
+$gradient-hero:              linear-gradient(90deg, rgba(28, 51, 116, 0.2) 0%, #1c3477 0.01%, #1a3578 39.11%, #73184b 75.5%, #b4022a 100%);
+$crimson-to-blue:            linear-gradient(128deg, #d10a42 0%, #0041ca 45.58%);
+$red-to-blue:                linear-gradient(97deg, #ed0233 17.6%, #003eb7 95.31%);
+$blue-to-red:                conic-gradient(from 151deg at 16.03% 39.06%, #003d85 32.24deg, #b80027 313.31deg);
 
 // Typography
 // ---------------------------------
@@ -35,7 +35,7 @@ $fz-default:                        16px;
 
 // у некоторых шрифтов в ios возникают проблемы с символом рубля
 // https://www.artlebedev.ru/kovodstvo/sections/159/#13
-$ff-alumni-sans:                         "Alumni", "Arial", sans-serif;
+$ff-alumni-sans:                         "Alumni Sans", "Arial", sans-serif;
 
 $ff-roboto-condensed:                    "Roboto Condensed", "Arial", sans-serif;
 

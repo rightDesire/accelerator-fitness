@@ -1,7 +1,7 @@
 .gym {
   position: relative;
   color: $color-primary;
-  font-family: "Roboto Condensed";
+  font-family: $ff-roboto-condensed;
   font-size: 16px;
   font-style: normal;
   font-weight: 300;
@@ -46,7 +46,7 @@
   min-width: 290px;
   margin: 0;
   margin-bottom: 25px;
-  font-family: "Alumni Sans";
+  font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
   line-height: 54px;
