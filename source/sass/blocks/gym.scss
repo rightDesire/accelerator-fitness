@@ -151,27 +151,154 @@
   }
 }
 
+.gym__video-wrapper,
 .gym__video {
   position: absolute;
-  top: 408px;
-  left: 50%;
   transform: translateX(-40%); //Подгон
-  z-index: 1;
 
   @include vp-1365 {
     top: unset;
-    bottom: 100px; //Подгон
     left: 50%;
-    width: 265px;
-    height: 167px;
     transform: translateX(-50%);
   }
 
   @include vp-767 {
     position: static;
+    transform: unset;
+  }
+}
+
+.gym__video-wrapper {
+  top: 408px;
+  left: 50%;
+  z-index: 1000;
+
+  @include vp-1365 {
+    top: 588px; //Подгон
+  }
+
+  @include vp-767 {
+    margin-bottom: 70px;
+  }
+}
+
+.gym__poster-wrapper {
+  position: relative;
+}
+
+.gym__poster-wrapper img {
+  object-fit: cover;
+  min-width: 320px;
+
+  @include vp-1365 {
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
+    width: 100vw;
+  }
+}
+
+.gym__video-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 100px;
+  height: 100px;
+  padding: 0;
+  color: $color-default-white;
+  background-color: transparent;
+  border: 2px solid rgba(237, 2, 51, 0.2);
+  border-radius: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    background-image: $gradient-primary;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+
+    @include vp-1365 {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  &:hover,
+  &:focus,
+  &:focus-visible {
+    outline: none;
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &::before {
+      background-image: unset;
+      background-color: $color-default-white;
+    }
+  }
+
+  &:active {
+    color: $color-primary;
+    border: 2px solid $color-primary;
+
+    &::before {
+      width: 52px;
+      height: 52px;
+      background-image: unset;
+      background-color: $color-default-white;
+
+      @include vp-1365 {
+        width: 32px;
+        height: 32px;
+      }
+    }
+  }
+
+  &:disabled {
+    opacity: 0.4;
+    pointer-events: none;
+  }
+
+  @include vp-1365 {
+    width: 72px;
+    height: 72px;
+  }
+}
+
+.gym__symbol-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 18px;
+  height: 18px;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+.gym__video {
+  top: 0;
+  left: 0;
+  display: none;
+  border: none;
+
+  @include vp-1365 {
+    bottom: 0;
+    width: 265px;
+    height: 167px;
+  }
+
+  @include vp-767 {
     width: 100vw;
     min-width: 320px;
-    margin-bottom: 70px;
-    transform: unset;
   }
 }

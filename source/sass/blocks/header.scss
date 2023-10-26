@@ -24,6 +24,13 @@
   text-decoration: none;
 }
 
+.header__logo-wrapper {
+  background-color: $color-resolution-blue;
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px;
+}
+
 .header__img-wrapper img {
   @include vp-1365 {
     width: 112px;
