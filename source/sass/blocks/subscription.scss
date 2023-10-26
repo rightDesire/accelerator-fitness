@@ -131,17 +131,15 @@
   right: 0;
   bottom: 0;
   transform: translateY(33%); //Подгон
-  overflow: hidden;
+  object-fit: cover;
 
   @include vp-1365 {
-    transform: translateY(30%); //Подгон
+    width: 275px;
+    height: 328px;
+    transform: translateY(25%); //Подгон
   }
 
   @include vp-767 {
     display: none;
   }
-}
-
-.subscription__img-wrapper img {
-  overflow: hidden;
 }
