@@ -105,7 +105,64 @@
               </picture>
               <button class="gym__video-btn" data-button type="button"><span class="gym__symbol-btn">&#9658;</span></button>
             </div>
-            <iframe class="gym__video" data-iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228" title="Видео из тренажерного зала."></iframe>
+            <!-- <iframe class="gym__video" data-iframe src="https://www.youtube.com/embed/9TZXsZItgdw" width="364" height="228" title="Видео из тренажерного зала."></iframe> -->
+          </div>
+        </section>
+        <section class="subscription" id="subscription">
+          <div class="subscription__container container">
+            <h2 class="subscription__title">Абонементы</h2>
+            <div class="subscription__tabs-wrapper">
+              <ul class="subscription__list-tabs list" data-tabs>
+                <li class="subscription__item-tab">
+                  <button class="subscription__btn subscription__btn--active" data-tab="1-month">1 месяц</button>
+                </li>
+                <li class="subscription__item-tab">
+                  <button class="subscription__btn" data-tab="6-month">6 месяцев</button>
+                </li>
+                <li class="subscription__item-tab">
+                  <button class="subscription__btn" data-tab="12-month">12 месяцев</button>
+                </li>
+              </ul>
+            </div>
+            <ul class="subscription__cards list" data-cards>
+              <li class="subscription__card card-subscription">
+                <h2 class="card-subscription__title">С тренером</h2>
+                <p class="card-subscription__description">12 занятий</p>
+                <p class="card-subscription__price-wrapper">
+                  <span class="card-subscription__price" data-price="with-coach">5000</span>
+                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" alt="Знак рубля.">
+                </p>
+                <a class="card-subscription__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="subscription__card card-subscription">
+                <h2 class="card-subscription__title">Дневной</h2>
+                <p class="card-subscription__description">с 8:00 до 17:00 </p>
+                <p class="card-subscription__price-wrapper">
+                  <span class="card-subscription__price" data-price="daytime">1700</span>
+                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" alt="Знак рубля.">
+                </p>
+                <a class="card-subscription__link btn" href="#">Купить абонемент</a>
+              </li>
+              <li class="subscription__card card-subscription">
+                <h2 class="card-subscription__title">Полный день</h2>
+                <p class="card-subscription__description">с 8:00 до 22:00 </p>
+                <p class="card-subscription__price-wrapper">
+                  <span class="card-subscription__price" data-price="all-day">2700</span>
+                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" alt="Знак рубля.">
+                </p>
+                <a class="card-subscription__link btn" href="#">Купить абонемент</a>
+              </li>
+            </ul>
+            <div class="subscription__img-wrapper">
+              <picture>
+                <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/subscription-image-tablet@1x.webp 1x, img/content/subscription-image-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/content/subscription-image-desktop@1x.webp 1x, img/content/subscription-image-desktop@2x.webp 2x">
+
+                <source media="(max-width: 1365px)" type="image/png" srcset="img/content/subscription-image-tablet@1x.png 1x, img/content/subscription-image-tablet@2x.png 2x">
+
+                <img src="img/content/subscription-image-desktop@1x.png" srcset="img/content/subscription-image-desktop@2x.png 2x" width="321" height="384" alt="Нагрузочные блины.">
+              </picture>
+            </div>
           </div>
         </section>
       </main>
