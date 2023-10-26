@@ -37,6 +37,10 @@
     flex-direction: column;
     align-items: center;
   }
+
+  @include vp-767 {
+    text-align: start;
+  }
 }
 
 .gym__title {
@@ -61,6 +65,9 @@
 
   @include vp-767 {
     margin-bottom: 13px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
   }
 }
 
@@ -76,14 +83,14 @@
   line-height: 22px;
 
   @include vp-1365 {
-    margin-bottom: 36px;
+    margin-bottom: 34px;
     font-size: 20px;
-    font-weight: 400;
     line-height: 20px;
   }
 
   @include vp-767 {
     margin-bottom: 40px;
+    font-size: 18px;
   }
 }
 
@@ -105,12 +112,13 @@
   margin-bottom: 8px;
 
   @include vp-1365 {
-
     margin-bottom: 36px;
   }
 
   @include vp-767 {
     margin-bottom: 50px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -159,7 +167,7 @@
   @include vp-1365 {
     top: unset;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) translateY(-2%); //Подгон
   }
 
   @include vp-767 {
@@ -188,7 +196,6 @@
 
 .gym__poster-wrapper img {
   object-fit: cover;
-  min-width: 320px;
 
   @include vp-1365 {
     width: 265px;
@@ -197,6 +204,7 @@
 
   @include vp-767 {
     width: 100vw;
+    min-width: 320px;
   }
 }
 
@@ -265,8 +273,16 @@
   }
 
   &:disabled {
+    outline: none;
+    color: $color-primary;
+    border: 2px solid $color-primary;
     opacity: 0.4;
     pointer-events: none;
+
+    &::before {
+      background-image: unset;
+      background-color: $color-default-white;
+    }
   }
 
   @include vp-1365 {
@@ -283,6 +299,11 @@
   width: 18px;
   height: 18px;
   transform: translateX(-50%) translateY(-50%);
+
+  @include vp-1365 {
+    font-size: 12px;
+    transform: translateX(-42%) translateY(-38%); //Подгон
+  }
 }
 
 .gym__video {
