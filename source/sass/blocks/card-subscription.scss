@@ -1,6 +1,6 @@
 .card-subscription {
   max-width: 360px;
-  padding: 65px 20px;
+  padding: 58px 20px;
   background-color: $color-default-white;
   border: 7px solid $color-default-white;
   font-style: normal;
@@ -18,29 +18,22 @@
   }
 
   @include vp-767 {
-    padding-top: 50px;
-    padding-bottom: 50px;
+    padding-top: 45px;
+    padding-bottom: 45px;
   }
-}
-
-.card-subscription__price-wrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  column-gap: 14px;
 }
 
 .card-subscription__title {
   margin: 0;
-  margin-bottom: 12px;
-  font-family: "Roboto Condensed";
+  margin-bottom: 8px;
+  font-family: $ff-roboto-condensed;
   font-size: 26px;
   font-weight: 700;
   line-height: 26px;
   word-wrap: break-word;
 
   @include vp-1365 {
-    margin-bottom: 18px;
+    margin-bottom: 14px;
     font-size: 24px;
     line-height: 24px;
   }
@@ -70,8 +63,20 @@
 }
 
 .card-subscription__price-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  column-gap: 14px;
   margin: 0;
   margin-bottom: 35px;
+
+  @include vp-1365 {
+    margin-bottom: 28px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 24px;
+  }
 }
 
 .card-subscription__price {
@@ -83,6 +88,17 @@
   word-wrap: break-word;
 
   // text-shadow: 10px -10px rgba(232, 232, 232, 0.48)
+  @include vp-767 {
+    font-size: 48px;
+    line-height: 150%;
+  }
+}
+
+.card-subscription__symbol {
+  @include vp-767 {
+    width: 24px;
+    height: 33px;
+  }
 }
 
 .card-subscription__link {
@@ -95,7 +111,7 @@
   padding: 19px 10px;
   color: $color-primary;
   border: 2px solid $color-primary;
-  font-family: "Roboto Condensed";
+  font-family: $ff-roboto-condensed;
   font-size: 12px;
   font-weight: 700;
   line-height: 12px;

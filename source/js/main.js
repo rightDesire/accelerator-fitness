@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {gymVideo} from './modules/gym-video';
-import {cardPrice, priceChange} from './modules/card-subscription';
+import {cardPrice} from './modules/card-subscription';
 
 // ---------------------------------
 

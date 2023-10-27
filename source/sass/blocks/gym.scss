@@ -46,7 +46,8 @@
   max-width: 355px;
   min-width: 290px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-top: -6px; //Подгон
+  margin-bottom: 28px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -56,6 +57,7 @@
 
   @include vp-1365 {
     max-width: 80vw;
+    margin-top: 0;
     margin-bottom: 20px;
     font-size: 42px;
     line-height: 42px;
@@ -88,7 +90,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 40px;
+    margin-bottom: 38px;
     font-size: 18px;
   }
 }
@@ -101,7 +103,7 @@
   word-wrap: break-word;
 
   @include vp-1365 {
-    max-width: 80vw;
+    max-width: 502px;
     margin-bottom: 36px;
   }
 
