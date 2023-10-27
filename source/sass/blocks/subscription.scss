@@ -96,10 +96,13 @@
 
   cursor: pointer;
 
-  &:hover,
-  &:focus,
-  &:focus-visible,
-  &:active {
+  @include hover-focus {
+    outline: none;
+    color: $color-primary;
+    border-bottom: 2px solid $color-crimson;
+  }
+
+  @include active {
     outline: none;
     color: $color-primary;
     border-bottom: 2px solid $color-crimson;

@@ -1,5 +1,6 @@
 .hero {
-  @include style-block;
+  color: $color-default-white;
+  background-image: $gradient-hero;
 
   &::before {
     content: "";
@@ -179,16 +180,19 @@
   text-transform: uppercase;
   word-wrap: break-word;
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  @include hover-focus {
     outline: none;
     color: $color-additional;
     background-color: $color-default-white;
   }
 
-  &:active {
+  @include active {
     color: $color-primary;
+    background-color: $color-default-white;
+  }
+
+  &:disabled {
+    opacity: 0.5;
   }
 
   @include vp-1365 {

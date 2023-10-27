@@ -1,5 +1,6 @@
 .header {
-  @include style-block;
+  color: $color-default-white;
+  background-image: $gradient-hero;
 }
 
 .header__container {
@@ -23,14 +24,12 @@
   color: $color-default-white;
   text-decoration: none;
 
-  &:focus,
-  &:focus-visible,
-  &:hover {
+  @include hover-focus {
     outline: none;
     opacity: 0.7;
   }
 
-  &:active {
+  @include active {
     opacity: 0.5;
   }
 }
@@ -40,8 +39,6 @@
   display: inline-block;
   margin-top: 30px;
   padding: 10px;
-
-
 }
 
 .header__img-wrapper img {
@@ -66,14 +63,12 @@
   word-wrap: break-word;
   border-bottom: 2px solid transparent;
 
-  &:hover,
-  &:focus,
-  &:focus-visible {
+  @include hover-focus {
     outline: none;
     color: $color-resolution-blue;
   }
 
-  &:active {
+  @include active {
     color: $color-primary;
     border-bottom: 2px solid $color-primary;
   }
