@@ -108,6 +108,7 @@
   }
 
   @include vp-767 {
+    max-width: calc(100vw - 30px); //Так можно?
     margin-bottom: 50px;
     font-size: 14px;
     line-height: 22px;
