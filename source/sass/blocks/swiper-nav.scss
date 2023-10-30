@@ -1,6 +1,6 @@
 .swiper-nav__button {
   position: absolute;
-  top: 50%;
+  bottom: 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -13,21 +13,21 @@
 
   &--prev {
     left: 0;
-    transform: translateX(25px) translateY(20px);
+    transform: translateX(25px) translateY(-120px);
   }
 
   &--next {
     right: 0;
-    transform: translateX(-25px) translateY(20px) scale(-1);
+    transform: translateX(-25px) translateY(-120px) scale(-1);
   }
 
   @include vp-1365 {
     &--prev {
-      transform: translateX(25px) translateY(10px);
+      transform: translateX(25px) translateY(-120px);
     }
 
     &--next {
-      transform: translateX(-25px) translateY(10px) scale(-1);
+      transform: translateX(-25px) translateY(-120px) scale(-1);
     }
   }
 
@@ -36,11 +36,11 @@
     height: 36px;
 
     &--prev {
-      transform: translateX(5px) translateY(20px);
+      transform: translateX(5px) translateY(-120px);
     }
 
     &--next {
-      transform: translateX(-5px) translateY(20px) scale(-1);
+      transform: translateX(-5px) translateY(-120px) scale(-1);
     }
   }
 

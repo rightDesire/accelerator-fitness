@@ -63,12 +63,14 @@
 }
 
 .card-subscription__price-wrapper {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 14px;
   margin: 0;
   margin-bottom: 35px;
+  z-index: 1;
 
   @include vp-1365 {
     margin-bottom: 28px;
@@ -87,7 +89,47 @@
   line-height: 150%;
   word-wrap: break-word;
 
-  // text-shadow: 10px -10px rgba(232, 232, 232, 0.48)
+  &::before {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: block;
+    width: 360px;
+    height: 150px;
+    color: $color-ghost-white;
+    font-family: $ff-roboto-condensed;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 150%;
+    transform: translateX(-50%) translateY(-67%); //Подгон
+    z-index: -1;
+
+    @include vp-767 {
+      width: 260px;
+      font-size: 80px;
+      transform: translateX(-50%) translateY(-54%);
+    }
+  }
+
+  &--with-coach {
+    &::before {
+      content: attr(data-price-with-coach);
+    }
+  }
+
+  &--daytime {
+    &::before {
+      content: attr(data-price-daytime);
+    }
+  }
+
+  &--all-day {
+    &::before {
+      content: attr(data-price-all-day);
+    }
+  }
+
   @include vp-767 {
     font-size: 48px;
     line-height: 150%;
