@@ -23,7 +23,7 @@
   }
 }
 
-.advantages__title {
+.advantages__text-content h2 {
   max-width: 100%;
   margin: 0;
   margin-bottom: 50px;
@@ -53,11 +53,13 @@
   }
 }
 
-.advantages__list {
+.advantages__text-content ul {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   min-height: 340px;
+  margin: 0;
   padding: 0 60px;
+  list-style: none;
 
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
@@ -100,7 +102,7 @@
     width: 240px;
     min-height: 100%;
     margin: 0 auto;
-    padding: 34px 10px;
+    padding: 34px;
     color: $color-default-white;
     background-color: $color-resolution-blue;
     text-align: center;
@@ -120,14 +122,16 @@
       min-width: 320px;
       margin: 0;
       margin-left: -15px;
+      padding: 0 70px;
     }
   }
 }
 
-.advantages__number-wrapper {
+.advantages__item p {
   display: flex;
   flex-direction: column;
   max-width: 172px;
+  margin: 0;
   color: $color-persian-blue;
   font-size: 14px;
   font-weight: 400;
@@ -140,7 +144,7 @@
   }
 }
 
-.advantages__number-special {
+.advantages__item span {
   max-width: 172px;
   margin-bottom: 12px;
   font-size: 70px;
@@ -153,7 +157,7 @@
   }
 }
 
-.advantages__number {
+.advantages__item p span {
   max-width: 110px;
   font-size: 70px;
   font-weight: 700;
@@ -188,22 +192,21 @@
   }
 }
 
-.advantages__text--special .advantages__term,
-.advantages__text--special .advantages__description {
+.advantages__text--special dt,
+.advantages__text--special dd {
   max-width: 172px;
-  word-wrap: break-word;
   font-size: 16px;
   font-weight: 400;
   line-height: 150%;
 }
 
-.advantages__text--special .advantages__term {
+.advantages__text--special dt {
   font-size: 24px;
   font-weight: 700;
   line-height: 24px;
 }
 
-.advantages__term {
+.advantages__text dt {
   max-width: 250px;
   font-size: 22px;
   font-weight: 400;
@@ -222,7 +225,7 @@
   }
 }
 
-.advantages__description {
+.advantages__text dd {
   max-width: 250px;
   margin-left: 0;
   margin-bottom: 14px;
@@ -236,7 +239,7 @@
   @include vp-767 {
     font-size: 14px;
     line-height: 22px;
-    word-wrap: break-word;
+    word-break: normal;
   }
 }
 
@@ -254,8 +257,8 @@
   }
 }
 
-.advantages__item:nth-child(5n+4) .advantages__number-wrapper,
-.advantages__item:nth-child(5n+5) .advantages__number-wrapper {
+.advantages__item:nth-child(5n+4) p,
+.advantages__item:nth-child(5n+5) p {
   justify-content: end;
 
   @include vp-1365 {
