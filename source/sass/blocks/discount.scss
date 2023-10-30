@@ -1,0 +1,144 @@
+.discount__container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  @include vp-1365 {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+
+  @include vp-767 {
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+}
+
+.discount__text-content h2 {
+  max-width: 100%;
+  margin: 0;
+  margin-bottom: 70px;
+  color: $color-primary;
+  font-family: $ff-alumni-sans;
+  font-size: 54px;
+  font-weight: 600;
+  line-height: 54px;
+  letter-spacing: 1.62px;
+  text-align: center;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    margin-bottom: 35px;
+    font-size: 42px;
+    line-height: 42px;
+    letter-spacing: 1.26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 22px;
+    font-size: 32px;
+    line-height: 32px;
+    letter-spacing: 0.96px;
+  }
+}
+
+.discount__wrapper {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 40px;
+  min-height: 462px;
+
+  @include vp-1365 {
+    display: flex;
+    flex-direction: column;
+    column-gap: unset;
+    row-gap: 30px;
+  }
+}
+
+.discount__offer-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  width: 100%;
+  gap: 40px;
+
+  @include vp-1365 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  @include vp-767 {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.discount__offer {
+  display: flex;
+  flex-direction: column;
+  padding: 35px;
+  padding-top: 30px;
+  color: $color-resolution-blue;
+  border: 7px solid $color-default-white;
+  border-image: $crimson-to-blue;
+  border-image-slice: 1;
+
+  @include vp-1365 {
+    width: 324px;
+    min-height: 211px;
+  }
+
+  @include vp-767 {
+    width: 100%;
+    min-height: 211px;
+  }
+}
+
+.discount__offer h3 {
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 26px;
+  font-weight: 700;
+  line-height: 26px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 24px;
+    line-height: 24px;
+  }
+}
+
+.discount__offer p {
+  max-width: 470px;
+  margin: 0;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 24px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+
+.discount__offer a {
+  max-width: max-content;
+  margin-top: auto;
+  padding-bottom: 5px;
+  color: $color-resolution-blue;
+  border-bottom: 1px solid $color-resolution-blue;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 14px;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 14px;
+    line-height: 14px;
+    letter-spacing: 0.7px;
+  }
+}
