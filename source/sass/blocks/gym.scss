@@ -281,10 +281,7 @@
   }
 }
 
-.gym__video {
-  top: 0;
-  left: 0;
-  display: none;
+.gym__video-wrapper iframe {
   border: none;
 
   @include vp-1365 {
