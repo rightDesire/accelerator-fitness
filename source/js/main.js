@@ -3,6 +3,8 @@ import {Form} from './modules/form-validate/form';
 import {gymVideo} from './modules/gym-video';
 import {cardPrice} from './modules/card-subscription';
 import {initSliders} from './modules/init-sliders';
+import {initAccordions} from './modules/init-accordion';
+import {initTabs} from './modules/init-tabs';
 
 // ---------------------------------
 
@@ -25,6 +27,8 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+    initAccordions();
+    initTabs();
   });
 });
 

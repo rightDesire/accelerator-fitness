@@ -1,4 +1,4 @@
-.swiper-nav__button {
+.jury-swiper-nav__button {
   position: absolute;
   bottom: 0;
   display: flex;
@@ -53,13 +53,23 @@
     background-color: $color-primary;
   }
 
-  &:disabled {
+  &:disabled,
+  &[aria-disabled="true"] {
     opacity: 0.3;
-    border: unset;
+    cursor: auto;
+
+    @include hover-focus {
+      border: unset;
+    }
+
+    @include active {
+      color: $color-primary;
+      background-color: unset;
+    }
   }
 }
 
-.swiper-nav__button svg {
+.jury-swiper-nav__button svg {
   @include vp-767 {
     width: 10px;
     height: 19px;

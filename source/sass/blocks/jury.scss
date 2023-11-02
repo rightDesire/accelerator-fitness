@@ -27,15 +27,13 @@
 }
 
 .jury__title {
-  max-width: 100%;
   margin: 0;
   margin-bottom: 45px;
   color: $color-primary;
   word-wrap: break-word;
 
   @include vp-1365 {
-    display: flex;
-    justify-content: center;
+    text-align: center;
     margin-bottom: 40px;
   }
 

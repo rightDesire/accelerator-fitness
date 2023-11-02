@@ -21,6 +21,11 @@
     padding-top: 45px;
     padding-bottom: 45px;
   }
+
+  &--special {
+    border-image: $crimson-to-blue;
+    border-image-slice: 1;
+  }
 }
 
 .card-subscription__title {

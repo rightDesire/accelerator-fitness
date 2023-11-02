@@ -1,4 +1,5 @@
 import {initJurySlider} from './jury-slider';
+import {initReviewSlider} from './reviews-slider';
 
 const vpDesktop = 1366;
 const vpTablet = 768;
@@ -6,6 +7,7 @@ const vpMobile = 0;
 
 const loop = {
   loopJury: true,
+  loopReview: false,
 };
 
 const breakpointsJury = {
@@ -26,6 +28,18 @@ const breakpointsJury = {
   },
 };
 
+const breakpointsReview = {
+  [vpDesktop]: {
+    allowTouchMove: false,
+  },
+  [vpMobile]: {
+    slidesPerView: 1,
+    spaceBetween: 0,
+    allowTouchMove: true,
+  },
+};
+
 export const initSliders = () => {
   initJurySlider(loop['loopJury'], breakpointsJury);
+  initReviewSlider(loop['loopReview'], breakpointsReview);
 };
