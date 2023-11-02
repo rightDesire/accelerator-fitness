@@ -5,7 +5,7 @@
 
 .accordion__element {
   padding: 25px 0;
-  border-top: 2px solid rgba(28, 51, 116, 0.20);
+  border-top: 2px solid rgba(28, 51, 116, 0.2);
 
   @include vp-767 {
     padding: 22px 0;
@@ -13,7 +13,7 @@
 }
 
 .accordion__element:last-child {
-  border-bottom: 2px solid rgba(28, 51, 116, 0.20);
+  border-bottom: 2px solid rgba(28, 51, 116, 0.2);
 }
 
 .accordion__button {
@@ -40,51 +40,49 @@
   }
 }
 
-.accordion__img-wrapper {
+.accordion__button img {
   position: absolute;
   top: 50%;
   right: 0;
   width: max-content;
-}
 
-.accordion__img-wrapper img {
   @include vp-767 {
     width: 30px;
     height: 30px;
   }
 }
 
-.accordion__img-wrapper:focus {
+.accordion__button:focus {
   outline: none;
 }
 
-.accordion__img-wrapper:focus [data-img-hover] {
+.accordion__button:focus [data-img-hover] {
   display: block;
 }
 
-.accordion__img-wrapper:focus [data-img-close] {
+.accordion__button:focus [data-img-close] {
   display: none;
 }
 
-.accordion__img-wrapper [data-img-open] {
-  display: none;
-  transform: translateY(-50%);
-}
-
-.accordion__img-wrapper [data-img-close] {
-  transform: translateY(-50%);
-}
-
-.accordion__img-wrapper [data-img-hover] {
+.accordion__button [data-img-open] {
   display: none;
   transform: translateY(-50%);
 }
 
-.accordion__img-wrapper:hover [data-img-hover] {
+.accordion__button [data-img-close] {
+  transform: translateY(-50%);
+}
+
+.accordion__button [data-img-hover] {
+  display: none;
+  transform: translateY(-50%);
+}
+
+.accordion__button:hover [data-img-hover] {
   display: block;
 }
 
-.accordion__img-wrapper:hover [data-img-close] {
+.accordion__button:hover [data-img-close] {
   display: none;
 }
 
@@ -92,15 +90,15 @@
   opacity: 0.3;
 }
 
-.accordion__element.is-active .accordion__img-wrapper > [data-img-open] {
+.accordion__element.is-active .accordion__button > [data-img-open] {
   display: block;
 }
 
-.accordion__element.is-active .accordion__img-wrapper > [data-img-close] {
+.accordion__element.is-active .accordion__button > [data-img-close] {
   display: none;
 }
 
-.accordion__element.is-active .accordion__img-wrapper > [data-img-hover] {
+.accordion__element.is-active .accordion__button > [data-img-hover] {
   display: none;
 }
 
