@@ -208,8 +208,8 @@
             </article>
           </div>
           <section class="jury">
-            <div class="jury__container">
-              <h3 class="jury__title section-title">Жюри</h3>
+            <h3 class="jury__title section-title">Жюри</h3>
+            <div class="jury__swiper-container">
               <div class="jury-swiper swiper" data-jury-swiper>
                 <div class="jury-swiper__wrapper swiper-wrapper">
                   <div class="jury-swiper__slide jury-card swiper-slide">
@@ -405,18 +405,19 @@
                     </div>
                   </div>
                 </div>
+
               </div>
-            </div>
-            <div class="jury-swiper-nav">
-              <div class="jury-swiper-nav__button jury-swiper-nav__button--prev" data-jury-swiper-btn-prev>
-                <svg width="16" height="32">
-                  <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
-                </svg>
-              </div>
-              <div class="jury-swiper-nav__button jury-swiper-nav__button--next" data-jury-swiper-btn-next>
-                <svg width="16" height="32">
-                  <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
-                </svg>
+              <div class="jury-swiper-nav">
+                <div class="jury-swiper-nav__button jury-swiper-nav__button--prev" data-jury-swiper-btn-prev>
+                  <svg width="16" height="32">
+                    <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                  </svg>
+                </div>
+                <div class="jury-swiper-nav__button jury-swiper-nav__button--next" data-jury-swiper-btn-next>
+                  <svg width="16" height="32">
+                    <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                  </svg>
+                </div>
               </div>
             </div>
           </section>
@@ -518,10 +519,10 @@
               <h2>Вопросы и ответы</h2>
               <div class="tabs" data-tabs="parent" data-delay="50">
                 <div class="tabs__controls" data-tabs="controls">
-                  <button class="tabs__control btn is-active" type="button" data-tabs="control" data-index="0">Центр</button>
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="1">Абонемент</button>
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="2">Услуги</button>
-                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="3">Правила</button>
+                  <button class="tabs__control btn is-active" type="button" data-tabs="control" data-index="0"><span>Центр</span></button>
+                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="1"><span>Абонемент</span></button>
+                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="2"><span>Услуги</span></button>
+                  <button class="tabs__control btn" type="button" data-tabs="control" data-index="3"><span>Правила</span></button>
                 </div>
                 <div class="tabs__content" data-tabs="content">
                   <div class="tabs__element is-active" data-tabs="element">
@@ -786,72 +787,133 @@
           </div>
         </section>
         <section class="reviews">
-          <div class="reviews__container">
-            <div class="reviews__text-content">
-              <h2>Отзывы</h2>
-              <div class="reviews-swiper swiper" data-reviews-swiper>
-                <div class="reviews-swiper__wrapper swiper-wrapper">
-                  <div class="reviews-swiper__slide reviews-card swiper-slide">
-                    <div class="reviews-card__container" data-reviews-slide>
-                      <div class="reviews-card__img-wrapper">
-                        <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="img/content/reviews-1-mobile@1x.webp 1x, img/content/reviews-1-mobile@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/reviews-1-desktop@1x.webp 1x, img/content/reviews-1-desktop@2x.webp 2x">
+          <div class="reviews__text-content">
+            <h2>Отзывы</h2>
+          </div>
+          <div class="reviews__swiper-container">
+            <div class="reviews-swiper swiper" data-reviews-swiper>
+              <div class="reviews-swiper__wrapper swiper-wrapper">
+                <div class="reviews-swiper__slide reviews-card swiper-slide">
+                  <div class="reviews-card__container" data-reviews-slide>
+                    <div class="reviews-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/reviews-1-mobile@1x.webp 1x, img/content/reviews-1-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/reviews-1-desktop@1x.webp 1x, img/content/reviews-1-desktop@2x.webp 2x">
 
-                          <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
-                          <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" alt="Отзыв Анны Орловой.">
-                        </picture>
-                      </div>
-                      <div class="reviews-card__wrapper">
-                        <h3>Анна Орлова</h3>
-                        <p>
-                          «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-                        </p>
-                      </div>
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
+                        <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" alt="Рецензент Анна Орлова.">
+                      </picture>
+                    </div>
+                    <div class="reviews-card__text">
+                      <h3>Анна Орлова</h3>
+                      <p>
+                        «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                      </p>
                     </div>
                   </div>
-                  <div class="reviews-swiper__slide reviews-card swiper-slide">
-                    <div class="reviews-card__container" data-reviews-slide>
-                      <div class="reviews-card__img-wrapper">
-                        <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="img/content/reviews-1-mobile@1x.webp 1x, img/content/reviews-1-mobile@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/reviews-1-desktop@1x.webp 1x, img/content/reviews-1-desktop@2x.webp 2x">
+                </div>
+                <div class="reviews-swiper__slide reviews-card swiper-slide">
+                  <div class="reviews-card__container" data-reviews-slide>
+                    <div class="reviews-card__img-wrapper">
+                      <picture>
+                        <source media="(max-width: 767px)" type="image/webp" srcset="img/content/reviews-1-mobile@1x.webp 1x, img/content/reviews-1-mobile@2x.webp 2x">
+                        <source type="image/webp" srcset="img/content/reviews-1-desktop@1x.webp 1x, img/content/reviews-1-desktop@2x.webp 2x">
 
-                          <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
-                          <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" alt="Отзыв Анны Орловой.">
-                        </picture>
-                      </div>
-                      <div class="reviews-card__wrapper">
-                        <h3>Анна Орлова2</h3>
-                        <p>
-                          «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
-                        </p>
-                      </div>
+                        <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
+                        <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" alt="Рецензент Анна Орлова.">
+                      </picture>
+                    </div>
+                    <div class="reviews-card__text">
+                      <h3>Анна Орлова2</h3>
+                      <p>
+                        «Хожу в Supergym уже больше года. Нравится, что в клубе всегда чисто, тренажеры обновляют, персонал дружелюбный. Зал просторный, даже в вечернее время нет очередей»
+                      </p>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="reviews-swiper-nav">
-            <div class="reviews-swiper-nav__button reviews-swiper-nav__button--prev" data-reviews-swiper-btn-prev>
-              <svg width="16" height="32">
-                <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
-              </svg>
-            </div>
-            <div class="reviews-swiper-nav__button reviews-swiper-nav__button--next" data-reviews-swiper-btn-next>
-              <svg width="16" height="32">
-                <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
-              </svg>
+            <div class="reviews-swiper-nav">
+              <div class="reviews-swiper-nav__button reviews-swiper-nav__button--prev" data-reviews-swiper-btn-prev>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                </svg>
+              </div>
+              <div class="reviews-swiper-nav__button reviews-swiper-nav__button--next" data-reviews-swiper-btn-next>
+                <svg width="16" height="32">
+                  <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                </svg>
+              </div>
             </div>
           </div>
         </section>
       </main>
       <footer>
-        <div class="container"></div>
+        <div class="footer__container">
+          <section class="form-footer">
+            <div class="form-footer__container">
+              <h2 class="form-footer__title">Бесплатное занятие</h2>
+              <div class="form-footer__form" data-form-validate>
+                <form action="https://echo.htmlacademy.ru/" method="POST">
+                  <div class="form-footer__wrapper">
+                    <div class="form-footer__input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
+                      <label>
+                        <input type="text" id="user-name" name="user-name" placeholder="Имя">
+                      </label>
+                    </div>
+                    <div class="form-footer__input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                      <label>
+                        <input type="tel" id="user-phone" name="user-phone">
+                      </label>
+                    </div>
+                  </div>
+                  <button class="form-footer__submit btn" type="submit">отправить</button>
+                </form>
+              </div>
+            </div>
+          </section>
+          <section class="contacts-footer">
+            <div class="contacts-footer__container">
+              <h2 class="contacts-footer__title">Контакты</h2>
+              <address class="contacts-footer__address">
+                <dl class="contacts-footer__list">
+                  <div class="contacts-footer__wrapper">
+                    <dt class="contacts-footer__term">
+                      Адрес:
+                    </dt>
+                    <dd class="contacts-footer__description">
+                      г. Омск, ул. 60 лет Октября, 7
+                    </dd>
+
+                    <dt class="contacts-footer__term">
+                      График работы:
+                    </dt>
+                    <dd class="contacts-footer__description">
+                      Пн-Вс: с 8:00 до 22:00
+                    </dd>
+                  </div>
+                  <div class="contacts-footer__wrapper">
+                    <dt class="contacts-footer__term">
+                      Телефон:
+                    </dt>
+                    <dd class="contacts-footer__description">
+                      8-800-555-55-55
+                    </dd>
+
+                    <dt class="contacts-footer__term">
+                      Email:
+                    </dt>
+                    <dd class="contacts-footer__description">
+                      omsk@supergym.ru
+                    </dd>
+                  </div>
+                </dl>
+              </address>
+            </div>
+          </section>
+        </div>
       </footer>
     </div>
-
     <script src="js/vendor.min.js"></script>
     <script src="js/main.min.js"></script>
   </body>

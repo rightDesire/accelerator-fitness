@@ -1,26 +1,27 @@
 .reviews {
-  position: relative;
-}
-
-.reviews__container {
-  width: 100%;
-  max-width: $vp-1366;
-  margin: 0 auto;
-  padding: 120px 103px;
+  padding: 120px 0;
 
   @include vp-1365 {
-    padding: 100px 94px;
+    padding: 100px 0;
   }
 
   @include vp-767 {
-    padding: 70px 47px;
+    padding: 70px 0;
   }
+}
+
+.reviews__swiper-container {
+  position: relative;
+  width: 100%;
+  max-width: $vp-1366;
+  margin: 0 auto;
 }
 
 .reviews__text-content h2 {
   max-width: 100%;
   margin: 0;
   margin-bottom: 46px;
+  padding: 0 20px;
   color: $color-primary;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -47,23 +48,19 @@
 
 .reviews-card__container {
   display: flex;
+  justify-content: center;
   column-gap: 30px;
-  width: 560px;
+  max-width: 560px;
   margin: 0 auto;
   padding: 60px;
   background-color: $color-resolution-blue;
-  font-size: $ff-roboto-condensed;
-
-  @include vp-1365 {
-    width: 100%;
-    justify-content: center;
-  }
+  font-family: $ff-roboto-condensed;
 
   @include vp-767 {
     flex-direction: column;
     align-items: center;
     row-gap: 10px;
-    min-width: 226px;
+    width: 226px;
     padding: 30px 25px;
     text-align: center;
   }
@@ -71,7 +68,6 @@
 
 .reviews-card__img-wrapper img {
   object-fit: cover;
-  // min-height: 100%;
 
   @include vp-767 {
     width: 68px;
@@ -79,12 +75,12 @@
   }
 }
 
-.reviews-card__wrapper {
+.reviews-card__text {
   max-width: 330px;
   color: $color-default-white;
 }
 
-.reviews-card__wrapper h3 {
+.reviews-card__text h3 {
   margin: 0;
   margin-bottom: 20px;
   font-size: 22px;
@@ -98,7 +94,7 @@
   }
 }
 
-.reviews-card__wrapper p {
+.reviews-card__text p {
   margin: 0;
   font-size: 16px;
   font-weight: 300;

@@ -12,7 +12,6 @@ window.addEventListener('DOMContentLoaded', () => {
 
   // Utils
   // ---------------------------------
-
   iosVhFix();
 
   // Modules
@@ -27,6 +26,7 @@ window.addEventListener('DOMContentLoaded', () => {
     const form = new Form();
     window.form = form;
     form.init();
+
     initAccordions();
     initTabs();
   });

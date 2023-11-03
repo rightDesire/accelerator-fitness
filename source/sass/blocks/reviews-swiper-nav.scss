@@ -13,21 +13,23 @@
 
   &--prev {
     left: 0;
-    transform: translateX(328px) translateY(75px);
+    transform: translateX(330px) translateY(50%);
   }
 
   &--next {
     right: 0;
-    transform: translateX(-328px) translateY(75px) scale(-1);
+    transform: translateX(-330px) translateY(50%) scale(-1);
   }
 
   @include vp-1365 {
     &--prev {
-      transform: translateX(25px) translateY(75px);
+      left: 0;
+      transform: translateY(50%) translateX(50%);
     }
 
     &--next {
-      transform: translateX(-25px) translateY(75px) scale(-1);
+      right: 0;
+      transform: translateY(50%) translateX(-50%) scale(-1);
     }
   }
 
@@ -36,11 +38,13 @@
     height: 36px;
 
     &--prev {
-      transform: translateX(5px) translateY(50px);
+      left: 0;
+      transform: translateY(50%) translateX(10%);
     }
 
     &--next {
-      transform: translateX(-5px) translateY(50px) scale(-1);
+      right: 0;
+      transform: translateY(50%) translateX(-10%) scale(-1);
     }
   }
 
