@@ -228,6 +228,10 @@
       background-image: unset;
       background-color: $color-default-white;
     }
+
+    .gym__svg-wrapper {
+      color: $color-primary;
+    }
   }
 
   @include active {
@@ -244,6 +248,10 @@
         width: 32px;
         height: 32px;
       }
+    }
+
+    .gym__svg-wrapper {
+      color: $color-primary;
     }
   }
 
@@ -266,18 +274,15 @@
   }
 }
 
-.gym__symbol-btn {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  display: block;
-  width: 18px;
-  height: 18px;
-  transform: translateX(-50%) translateY(-50%);
+.gym__svg-wrapper {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-default-white;
+  transform: translateX(1px) translateY(2px); //Подгон
 
   @include vp-1365 {
-    font-size: 12px;
-    transform: translateX(-42%) translateY(-38%); //Подгон
+    transform: translateX(1px) translateY(3px); //Подгон
   }
 }
 

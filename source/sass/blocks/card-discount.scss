@@ -73,23 +73,25 @@
   width: max-content;
   max-width: 190px;
   margin-top: auto;
-  padding-bottom: 5px;
+  padding: 10px;
   color: $color-default-white;
-  border-bottom: 1px solid $color-default-white;
+  border: 1px solid transparent;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  text-decoration: underline;
   word-wrap: break-word;
+  transform: translateX(-10px) translateY(10px);
 
   @include hover {
     opacity: 0.8;
   }
 
   @include focus {
-    outline: 1px solid $color-default-white;
-    border-bottom-color: transparent;
+    outline: none;
+    border-color: $color-default-white;
   }
 
   @include active {

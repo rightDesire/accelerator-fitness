@@ -81,11 +81,13 @@
 }
 
 .reviews-card__text h3 {
+  max-width: 330px;
   margin: 0;
   margin-bottom: 20px;
   font-size: 22px;
   font-weight: 400;
   line-height: 22px;
+  word-wrap: break-word;
 
   @include vp-767 {
     margin-bottom: 16px;
@@ -95,10 +97,12 @@
 }
 
 .reviews-card__text p {
+  max-width: 330px;
   margin: 0;
   font-size: 16px;
   font-weight: 300;
   line-height: 24px;
+  word-wrap: break-word;
 
   @include vp-767 {
     font-size: 14px;

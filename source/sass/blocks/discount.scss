@@ -124,17 +124,37 @@
 }
 
 .discount__offer a {
-  max-width: max-content;
+  width: max-content;
+  max-width: 190px;
   margin-top: auto;
-  padding-bottom: 5px;
+  padding: 10px;
   color: $color-resolution-blue;
-  border-bottom: 1px solid $color-resolution-blue;
+  border: 1px solid transparent;
   font-size: 14px;
   font-weight: 700;
   line-height: 14px;
   letter-spacing: 0.7px;
   text-transform: uppercase;
+  text-decoration: underline;
   word-wrap: break-word;
+  transform: translateX(-10px) translateY(10px);
+
+  @include hover {
+    opacity: 0.8;
+  }
+
+  @include focus {
+    outline: none;
+    border-color: $color-resolution-blue;
+  }
+
+  @include active {
+    opacity: 1;
+  }
+
+  &:disabled {
+    opacity: 0.3;
+  }
 
   @include vp-1365 {
     font-size: 14px;

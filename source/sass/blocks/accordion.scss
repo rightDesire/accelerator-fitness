@@ -38,6 +38,10 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  @include focus {
+    outline: none;
+  }
 }
 
 .accordion__button span {
@@ -53,11 +57,29 @@
   }
 }
 
-.accordion__button img {
+.accordion__button.focus-visible:focus .accordion__svg-wrapper {
+  color: $color-default-white;
+  background-color: $color-primary;
+  border-color: transparent;
+}
+
+.accordion__svg-wrapper {
   position: absolute;
   top: 50%;
   right: 0;
-  width: max-content;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  color: $color-primary;
+  border: 1px solid $color-primary;
+  border-radius: 50%;
+  transform: translateY(-50%);
+
+  &--open {
+    display: none;
+  }
 
   @include vp-767 {
     width: 30px;
@@ -65,54 +87,17 @@
   }
 }
 
-.accordion__button:focus {
-  outline: none;
-}
+.accordion__element.is-active .accordion__button > .accordion__svg-wrapper {
+  &--open {
+    display: flex;
+    color: $color-default-white;
+    background-color: $color-primary;
+    border-color: transparent;
+  }
 
-.accordion__button:focus [data-img-hover] {
-  display: block;
-}
-
-.accordion__button:focus [data-img-close] {
-  display: none;
-}
-
-.accordion__button [data-img-open] {
-  display: none;
-  transform: translateY(-50%);
-}
-
-.accordion__button [data-img-close] {
-  transform: translateY(-50%);
-}
-
-.accordion__button [data-img-hover] {
-  display: none;
-  transform: translateY(-50%);
-}
-
-.accordion__button:hover [data-img-hover] {
-  display: block;
-}
-
-.accordion__button:hover [data-img-close] {
-  display: none;
-}
-
-.accordion__button:disabled [data-img-close] {
-  opacity: 0.3;
-}
-
-.accordion__element.is-active .accordion__button > [data-img-open] {
-  display: block;
-}
-
-.accordion__element.is-active .accordion__button > [data-img-close] {
-  display: none;
-}
-
-.accordion__element.is-active .accordion__button > [data-img-hover] {
-  display: none;
+  &--close {
+    display: none;
+  }
 }
 
 .accordion__wrapper {
@@ -142,5 +127,13 @@
     padding-right: 70px;
     font-size: 16px;
     line-height: 20px;
+  }
+}
+
+@media (hover: hover) {
+  .accordion__button:hover:not(.focus-visible) .accordion__svg-wrapper {
+    color: $color-default-white;
+    background-color: $color-primary;
+    border-color: transparent;
   }
 }

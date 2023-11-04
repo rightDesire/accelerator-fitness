@@ -3,8 +3,10 @@
 }
 
 .contacts-footer__container {
+  height: 100%;
+  min-height: 337px;
   padding: 60px 120px;
-  padding-right: 163px;
+  padding-right: 40px;
   color: $color-primary;
   font-family: $ff-roboto-condensed;
 
@@ -14,10 +16,12 @@
 
   @include vp-767 {
     padding: 70px 15px;
+    padding-bottom: 42px;
   }
 }
 
 .contacts-footer__title {
+  max-width: 510px;
   margin: 0;
   margin-bottom: 40px;
   font-family: $ff-alumni-sans;
@@ -25,9 +29,16 @@
   font-weight: 600;
   line-height: 54px;
   letter-spacing: 1.62px;
+  word-wrap: break-word;
+
+  @include vp-1365 {
+    font-size: 42px;
+    font-weight: 700;
+    letter-spacing: 1.26px;
+  }
 }
 
-.contacts-footer__list {
+.contacts-footer__address {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   margin: 0;
@@ -38,11 +49,12 @@
   }
 }
 
-.contacts-footer__wrapper {
+.contacts-footer__list {
   min-width: 250px;
+  margin: 0;
 }
 
-.contacts-footer__wrapper:first-child {
+.contacts-footer__list:first-child {
   padding-right: 50px;
   border-right: 1px solid #74819c;
 
@@ -56,7 +68,7 @@
   }
 }
 
-.contacts-footer__wrapper:last-child {
+.contacts-footer__list:last-child {
   padding-left: 50px;
 
   @include vp-1365 {
@@ -70,21 +82,32 @@
 
 
 .contacts-footer__term {
+  max-width: 180px;
   margin-bottom: 5px;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
+  word-wrap: break-word;
 
   @include vp-767 {
     margin-bottom: 12px;
+    font-size: 22px;
+    line-height: 22px;
   }
 }
 
 .contacts-footer__description {
+  max-width: 180px;
   margin-left: 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px;
+  word-wrap: break-word;
 
   @include vp-767 {
     margin-bottom: 28px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
