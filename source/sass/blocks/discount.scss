@@ -16,7 +16,7 @@
 .discount__text-content h2 {
   max-width: 100%;
   margin: 0;
-  margin-bottom: 70px;
+  margin-bottom: 75px;
   color: $color-primary;
   font-family: $ff-alumni-sans;
   font-size: 54px;
@@ -34,7 +34,6 @@
   }
 
   @include vp-767 {
-    margin-bottom: 22px;
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
@@ -76,8 +75,7 @@
 .discount__offer {
   display: flex;
   flex-direction: column;
-  padding: 35px;
-  padding-top: 30px;
+  padding: 22px 28px;
   color: $color-resolution-blue;
   border: 7px solid $color-default-white;
   border-image: $crimson-to-blue;
@@ -86,11 +84,16 @@
   @include vp-1365 {
     width: 324px;
     min-height: 211px;
+    padding: 25px;
   }
 
   @include vp-767 {
     width: 100%;
+    align-items: center;
     min-height: 211px;
+    padding: 40px;
+    padding-bottom: 25px;
+    text-align: center;
   }
 }
 
@@ -106,6 +109,11 @@
     font-size: 24px;
     line-height: 24px;
   }
+
+  @include vp-767 {
+    font-size: 22px;
+    line-height: 22px;
+  }
 }
 
 .discount__offer p {
@@ -120,6 +128,13 @@
   @include vp-1365 {
     font-size: 16px;
     line-height: 24px;
+  }
+
+  @include vp-767 {
+    max-width: 160px;
+    margin-bottom: 20px;
+    font-size: 14px;
+    line-height: 22px;
   }
 }
 
@@ -137,7 +152,7 @@
   text-transform: uppercase;
   text-decoration: underline;
   word-wrap: break-word;
-  transform: translateX(-10px) translateY(10px);
+  transform: translateX(-10px);
 
   @include hover {
     opacity: 0.8;
@@ -160,5 +175,10 @@
     font-size: 14px;
     line-height: 14px;
     letter-spacing: 0.7px;
+    transform: translateX(-10px) translateY(10px);
+  }
+
+  @include vp-767 {
+    transform: unset;
   }
 }

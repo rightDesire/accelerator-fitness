@@ -1,8 +1,8 @@
 {
-  "name": "Liga-A-accelerator-template",
+  "name": "accelerator-1",
   "version": "2.0.0",
   "type": "module",
-  "description": "Стартовый шаблон сборки Лиги А",
+  "description": "Первый проект в рамках акселератора",
   "browserslist": [
     "last 3 versions",
     "IE 11",
