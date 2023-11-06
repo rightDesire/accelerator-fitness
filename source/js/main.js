@@ -1,7 +1,7 @@
 import {iosVhFix} from './utils/ios-vh-fix';
 import {Form} from './modules/form-validate/form';
 import {gymVideo} from './modules/gym-video';
-import {cardPrice} from './modules/card-subscription';
+import {subscriptionPrice} from './modules/subscription-price';
 import {initSliders} from './modules/init-sliders';
 import {initAccordions} from './modules/init-accordion';
 import {initTabs} from './modules/init-tabs';
@@ -17,7 +17,7 @@ window.addEventListener('DOMContentLoaded', () => {
   // Modules
   // ---------------------------------
   gymVideo();
-  cardPrice();
+  subscriptionPrice();
   initSliders();
 
   // все скрипты должны быть в обработчике 'DOMContentLoaded', но не все в 'load'

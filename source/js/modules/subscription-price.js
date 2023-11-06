@@ -1,4 +1,4 @@
-const cardPrice = () => {
+const subscriptionPrice = () => {
   const dataNameCoach = 'data-price-with-coach';
   const dataNameDaytime = 'data-price-daytime';
   const dataNameAllDay = 'data-price-all-day';
@@ -79,4 +79,4 @@ const cardPrice = () => {
   });
 };
 
-export {cardPrice};
+export {subscriptionPrice};

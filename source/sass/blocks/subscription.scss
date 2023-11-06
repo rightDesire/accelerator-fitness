@@ -48,6 +48,7 @@
 }
 
 .subscription__list-tabs {
+  position: relative;
   display: flex;
   gap: 50px;
   margin-bottom: 34px;
@@ -82,10 +83,9 @@
   border: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   background-color: $color-ghost-white;
-  transform: translateY(2px);
   word-wrap: break-word;
-
   cursor: pointer;
+  transform: translateY(2px);
 
   @include hover-focus {
     outline: none;

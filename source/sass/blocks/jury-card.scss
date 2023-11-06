@@ -126,24 +126,18 @@
 }
 
 @media (hover: hover) {
-  .jury-card__container:hover:not(.focus-visible) {
-    .jury-card__wrapper {
-      opacity: 1;
-      order: 3;
-    }
-  }
-}
-
-.jury-card__container.focus-visible:focus {
-  .jury-card__wrapper {
+  .jury-card__container:hover:not(.focus-visible) .jury-card__wrapper {
     opacity: 1;
     order: 3;
   }
 }
 
-.jury-card__container:active:not(.focus-visible) {
-  .jury-card__wrapper {
-    opacity: 1;
-    order: 3;
-  }
+.jury-card__container.focus-visible:focus .jury-card__wrapper {
+  opacity: 1;
+  order: 3;
+}
+
+.jury-card__container:active:not(.focus-visible) .jury-card__wrapper {
+  opacity: 1;
+  order: 3;
 }
