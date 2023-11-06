@@ -1,4 +1,5 @@
 import gulp from 'gulp';
+import ghPages from 'gulp-gh-pages';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
@@ -10,6 +11,11 @@ const server = browserSync.create();
 const streamStyles = () => compileStyles().pipe(server.stream());
 
 const clean = () => del('build');
+
+gulp.task('deploy', function() {
+    return gulp.src('./build/**/*')
+        .pipe(ghPages());
+});
 
 const syncServer = () => {
   server.init({
