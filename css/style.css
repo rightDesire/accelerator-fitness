@@ -2502,6 +2502,7 @@ button,
 }
 
 .subscription__list-tabs {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -2522,11 +2523,11 @@ button,
   border: none;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
   background-color: #f8f9fc;
+  word-wrap: break-word;
+  cursor: pointer;
   -webkit-transform: translateY(2px);
   -ms-transform: translateY(2px);
   transform: translateY(2px);
-  word-wrap: break-word;
-  cursor: pointer;
 }
 
 .subscription__btn.focus-visible:focus {
@@ -2535,7 +2536,7 @@ button,
   border-bottom: 2px solid #d10a42;
 }
 
-.subscription__btn:active:not(.focus-visible) {
+.subscription__btn--active {
   outline: none;
   color: #102654;
   border-bottom: 2px solid #d10a42;
