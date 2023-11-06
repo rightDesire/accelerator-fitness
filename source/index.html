@@ -13,6 +13,9 @@
     <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png">
     <link rel="manifest" href="manifest.webmanifest">
     <!-- Предзагрузка -->
+    <link rel="preload" href="css/style.min.css" as="style">
+    <link rel="preload" href="js/vendor.min.js" as="script">
+    <link rel="preload" href="js/main.min.js" as="script">
     <link rel="preload" href="fonts/alumni/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
@@ -133,7 +136,7 @@
                 <p class="card-subscription__description">12 занятий</p>
                 <p class="card-subscription__price-wrapper">
                   <span class="card-subscription__price card-subscription__price--with-coach" data-price-with-coach>5000</span>
-                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" alt="">
+                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" loading="lazy" alt="">
                 </p>
                 <a class="card-subscription__link btn" href="#">Купить абонемент</a>
               </li>
@@ -142,7 +145,7 @@
                 <p class="card-subscription__description">с 8:00 до 17:00 </p>
                 <p class="card-subscription__price-wrapper">
                   <span class="card-subscription__price card-subscription__price--daytime" data-price-daytime>1700</span>
-                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" alt="">
+                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" loading="lazy" alt="">
                 </p>
                 <a class="card-subscription__link card-subscription__link--special btn" href="#">Купить абонемент</a>
               </li>
@@ -151,7 +154,7 @@
                 <p class="card-subscription__description">с 8:00 до 22:00 </p>
                 <p class="card-subscription__price-wrapper">
                   <span class="card-subscription__price card-subscription__price--all-day" data-price-all-day>2700</span>
-                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" alt="">
+                  <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" loading="lazy" alt="">
                 </p>
                 <a class="card-subscription__link btn" href="#">Купить абонемент</a>
               </li>
@@ -163,7 +166,7 @@
 
                 <source media="(max-width: 1365px)" type="image/png" srcset="img/content/subscription-image-tablet@1x.png 1x, img/content/subscription-image-tablet@2x.png 2x">
 
-                <img src="img/content/subscription-image-desktop@1x.png" srcset="img/content/subscription-image-desktop@2x.png 2x" width="321" height="384" alt="">
+                <img src="img/content/subscription-image-desktop@1x.png" srcset="img/content/subscription-image-desktop@2x.png 2x" loading="lazy" width="321" height="384" alt="">
               </picture>
             </div>
           </div>
@@ -206,7 +209,7 @@
 
                   <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/competition-image-mobile@1x.jpg 1x, img/content/competition-image-mobile@2x.jpg 2x">
                   <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/competition-image-tablet@1x.jpg 1x, img/content/competition-image-tablet@2x.jpg 2x">
-                  <img src="img/content/competition-image-desktop@1x.jpg" srcset="img/content/competition-image-desktop@2x.jpg 2x" width="660" height="500" alt="Спортсмен.">
+                  <img src="img/content/competition-image-desktop@1x.jpg" srcset="img/content/competition-image-desktop@2x.jpg 2x" width="660" height="500" loading="lazy" alt="Спортсмен.">
                 </picture>
               </div>
             </article>
@@ -226,7 +229,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -250,7 +253,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -274,7 +277,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -298,7 +301,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -322,7 +325,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -346,7 +349,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -370,7 +373,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -394,7 +397,7 @@
 
                           <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
                           <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" alt="Жюри Александр Пашков.">
+                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
                       <h4 class="jury-card__title">Александр Пашков</h4>
@@ -496,7 +499,7 @@
 
                       <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/discount-image-tablet@1x.jpg 1x, img/content/discount-image-tablet@2x.jpg 2x">
 
-                      <img src="img/content/discount-image-desktop@1x.jpg" srcset="img/content/discount-image-desktop@2x.jpg 2x" width="280" height="462" alt="">
+                      <img src="img/content/discount-image-desktop@1x.jpg" srcset="img/content/discount-image-desktop@2x.jpg 2x" width="280" height="462" loading="lazy" alt="">
                     </picture>
                   </div>
                 </article>
@@ -916,7 +919,7 @@
                         <source type="image/webp" srcset="img/content/reviews-1-desktop@1x.webp 1x, img/content/reviews-1-desktop@2x.webp 2x">
 
                         <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
-                        <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" alt="Рецензент Анна Орлова.">
+                        <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Рецензент Анна Орлова.">
                       </picture>
                     </div>
                     <div class="reviews-card__text">
@@ -935,7 +938,7 @@
                         <source type="image/webp" srcset="img/content/reviews-1-desktop@1x.webp 1x, img/content/reviews-1-desktop@2x.webp 2x">
 
                         <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/reviews-1-mobile@1x.jpg 1x, img/content/reviews-1-mobile@2x.jpg 2x">
-                        <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" alt="Рецензент Анна Орлова.">
+                        <img src="img/content/reviews-1-desktop@1x.jpg" srcset="img/content/reviews-1-desktop@2x.jpg 2x" width="80" height="80" loading="lazy" alt="Рецензент Анна Орлова.">
                       </picture>
                     </div>
                     <div class="reviews-card__text">
@@ -1031,7 +1034,7 @@
             <div class="nav-footer__container container">
               <a class="nav-footer__link" href="index.html">
                 <div class="nav-footer__img-wrapper">
-                  <img width="110" height="24" src="img/svg/logo-footer.svg" alt="Логотип фитнес-центра SUPERGYM.">
+                  <img src="img/svg/logo-footer.svg" width="110" height="24" loading="lazy" alt="Логотип фитнес-центра SUPERGYM.">
                 </div>
               </a>
               <ul class="nav-footer__list list">
