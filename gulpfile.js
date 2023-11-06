@@ -12,11 +12,6 @@ const streamStyles = () => compileStyles().pipe(server.stream());
 
 const clean = () => del('build');
 
-gulp.task('deploy', function() {
-    return gulp.src('./build/**/*')
-        .pipe(ghPages());
-});
-
 const syncServer = () => {
   server.init({
     server: 'build/',
@@ -44,6 +39,11 @@ const refresh = (done) => {
   server.reload();
   done();
 };
+
+gulp.task('deploy', function() {
+  return gulp.src('./build/**/*')
+      .pipe(ghPages());
+});
 
 const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
