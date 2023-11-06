@@ -1,5 +1,4 @@
 import gulp from 'gulp';
-import ghPages from 'gulp-gh-pages';
 import browserSync from 'browser-sync';
 import del from 'del';
 import {compileStyles, compileMinStyles} from './gulp/compileStyles.mjs';
@@ -39,11 +38,6 @@ const refresh = (done) => {
   server.reload();
   done();
 };
-
-gulp.task('deploy', function() {
-  return gulp.src('./build/**/*')
-      .pipe(ghPages());
-});
 
 const build = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg));
 const dev = gulp.series(clean, copy, sprite, gulp.parallel(compileMinStyles, compileMainMinScripts, compileVendorScripts, optimizePng, optimizeJpg, optimizeSvg), syncServer);
