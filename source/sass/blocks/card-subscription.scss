@@ -182,7 +182,8 @@
     background-image: $gradient-primary;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.3;
   }
 

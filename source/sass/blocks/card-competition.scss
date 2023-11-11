@@ -223,7 +223,8 @@
     background-color: $color-default-white;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.5;
   }
 }

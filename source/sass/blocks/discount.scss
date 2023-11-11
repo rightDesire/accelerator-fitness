@@ -187,3 +187,7 @@
     transform: unset;
   }
 }
+
+.discount__offer a.disabled {
+  opacity: 0.3;
+}

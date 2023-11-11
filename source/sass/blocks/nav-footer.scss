@@ -99,7 +99,8 @@
     border-color: transparent;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.4;
     border-color: transparent;
   }
@@ -166,7 +167,8 @@
   background-color: $color-default-white;
   cursor: pointer;
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     color: $color-black-russian;
     background-color: rgba(255, 255, 255, 0.3);
   }

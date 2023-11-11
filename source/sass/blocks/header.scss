@@ -74,7 +74,8 @@
     border-bottom: 2px solid $color-primary;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     color: $color-default-white;
     border-bottom: 2px solid transparent;
     opacity: 0.5;

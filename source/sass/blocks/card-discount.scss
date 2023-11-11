@@ -130,6 +130,10 @@
   }
 }
 
+.card-discount__wrapper a.disabled {
+  opacity: 0.3;
+}
+
 .card-discount__img-wrapper img {
   object-fit: cover;
   min-height: 100%;
