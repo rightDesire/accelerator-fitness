@@ -55,6 +55,7 @@
 
 .header__contact {
   min-width: 155px;
+  margin-bottom: -2px; //Подгон
   color: $color-default-white;
   font-family: $ff-roboto-condensed;
   font-size: 26px;

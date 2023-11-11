@@ -37,6 +37,7 @@
     font-size: 32px;
     line-height: 32px;
     letter-spacing: 0.96px;
+    margin-bottom: 40px;
   }
 }
 
@@ -51,6 +52,10 @@
     flex-direction: column;
     column-gap: unset;
     row-gap: 30px;
+  }
+
+  @include vp-767 {
+    row-gap: 40px;
   }
 }
 

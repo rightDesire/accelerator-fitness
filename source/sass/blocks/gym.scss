@@ -169,6 +169,27 @@
 
 .gym__poster-wrapper {
   position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 364px;
+    height: 228px;
+    background-color: rgba(20, 54, 122, 0.50);
+
+    @include vp-1365 {
+      width: 265px;
+      height: 167px;
+    }
+
+    @include vp-767 {
+      width: 100%;
+      height: 167px;
+    }
+  }
 }
 
 .gym__poster-wrapper img {
@@ -280,9 +301,12 @@
   align-items: center;
   color: $color-default-white;
   transform: translateX(1px) translateY(2px); //Подгон
+}
 
+.gym__svg-wrapper svg {
   @include vp-1365 {
-    transform: translateX(1px) translateY(3px); //Подгон
+    width: 15px;
+    height: 15px;
   }
 }
 

@@ -16,24 +16,28 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="js/vendor.min.js" as="script">
     <link rel="preload" href="js/main.min.js" as="script">
+    <link rel="preload" as="image"
+      imagesrcset="img/content/hero-image-desktop@1x.webp, img/content/hero-image-desktop@2x.webp 2x" media="(min-width: 1366px)">
+    <link rel="preload" as="image"
+      imagesrcset="img/content/hero-image-tablet@1x.webp, img/content/hero-image-tablet@2x.webp 2x" media="(min-width: 768px) and (max-width: 1365px)">
     <link rel="preload" href="fonts/alumni/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto/RobotoCondensed-Bold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/roboto/RobotoCondensed-Regular.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
     <div class="wrapper">
-      <header class="header">
-        <div class="header__container container">
-          <div class="header__img-wrapper">
-            <a class="header__link" href="index.html">
-              <img width="120" height="26" src="img/svg/logo.svg" alt="Логотип фитнес-центра SUPERGYM.">
-            </a>
+      <div data-test="hero">
+        <header class="header">
+          <div class="header__container container">
+            <div class="header__img-wrapper">
+              <a class="header__link" href="index.html">
+                <img width="120" height="26" src="img/svg/logo.svg" alt="Логотип фитнес-центра SUPERGYM.">
+              </a>
+            </div>
+            <a class="header__contact" href="tel:+78005555555">8-800-555-55-55</a>
           </div>
-          <a class="header__contact" href="tel:+78005555555">8-800-555-55-55</a>
-        </div>
-      </header>
-      <main>
-        <h1 class="visually-hidden">Фитнес-центр SUPERGYM.</h1>
+        </header>
         <section class="hero">
           <div class="hero__container container">
             <h2 class="visually-hidden">Основные усуги омского фитнес-центра.</h2>
@@ -69,7 +73,10 @@
             </div>
           </div>
         </section>
-        <section class="gym">
+      </div>
+      <main>
+        <h1 class="visually-hidden">Фитнес-центр SUPERGYM.</h1>
+        <section class="gym" data-test="about">
           <div class="gym__container container">
             <div class="gym__text-content">
               <h2>Тренажерный зал</h2>
@@ -106,7 +113,7 @@
               </picture>
               <button class="gym__video-btn" data-button type="button" aria-label="Воспроизвести.">
                 <span class="gym__svg-wrapper">
-                  <svg width="22" height="22">
+                  <svg width="16" height="22">
                     <use xlink:href="img/sprite.svg#play-icon" aria-hidden="true"></use>
                   </svg>
                 </span>
@@ -114,7 +121,7 @@
             </div>
           </div>
         </section>
-        <section class="subscription" id="subscription">
+        <section class="subscription" data-test="price" id="subscription">
           <div class="subscription__container container">
             <h2 class="subscription__title section-title">Абонементы</h2>
             <div class="subscription__tabs-wrapper">
@@ -171,7 +178,7 @@
             </div>
           </div>
         </section>
-        <section class="competition">
+        <section class="competition" data-test="games">
           <div class="competition__container container">
             <h2 class="visually-hidden">Соревнования по Crossfit.</h2>
             <article class="competition__card card-competition">
@@ -247,16 +254,16 @@
                     <div class="jury-card__container" data-jury-slide>
                       <div class="jury-card__img-wrapper">
                         <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
-                          <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/jury-1-tablet@1x.webp 1x, img/content/jury-1-tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/jury-1-desktop@1x.webp 1x, img/content/jury-1-desktop@2x.webp 2x">
+                          <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-2-mobile@1x.webp 1x, img/content/jury-2-mobile@2x.webp 2x"> -->
+                          <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/jury-2-tablet@1x.webp 1x, img/content/jury-2-tablet@2x.webp 2x">
+                          <source type="image/webp" srcset="img/content/jury-2-desktop@1x.webp 1x, img/content/jury-2-desktop@2x.webp 2x">
 
-                          <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
-                          <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
+                          <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-2-mobile@1x.jpg 1x, img/content/jury-2-mobile@2x.jpg 2x"> -->
+                          <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-2-tablet@1x.jpg 1x, img/content/jury-2-tablet@2x.jpg 2x">
+                          <img src="img/content/jury-2-desktop@1x.jpg" srcset="img/content/jury-2-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
-                      <h4 class="jury-card__title">Александр Пашков</h4>
+                      <h4 class="jury-card__title">Мария Кетова</h4>
                       <div class="jury-card__wrapper">
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
@@ -428,7 +435,7 @@
             </div>
           </section>
         </section>
-        <section class="advantages">
+        <section class="advantages" data-test="features">
           <div class="advantages__container container">
             <div class="advantages__text-content">
               <h2>Наши преимущества</h2>
@@ -480,7 +487,7 @@
             </div>
           </div>
         </section>
-        <section class="discount">
+        <section class="discount" data-test="offers">
           <div class="discount__container container">
             <div class="discount__text-content">
               <h2>Акции</h2>
@@ -519,7 +526,7 @@
             </div>
           </div>
         </section>
-        <section class="faq">
+        <section class="faq" data-test="faq">
           <div class="faq__container container">
             <div class="faq__text-content">
               <h2>Вопросы и ответы</h2>
@@ -537,12 +544,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Как стать членом фитнес-центра?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -559,12 +566,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Где можно посмотреть расписание?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -581,12 +588,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Есть кулеры в центре? Предоставляются полотенца?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -603,12 +610,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -629,12 +636,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Занятия с тренером входят в абонемент?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -651,12 +658,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Можно ли заморозить абонемент?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -673,12 +680,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -695,12 +702,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Что такое семейный доступ и доступ для друзей?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -721,12 +728,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -743,12 +750,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Проводятся ли в клубе какие-либо мероприятия или соревнования?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -765,12 +772,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Можно ли приобрести в центре спортивное питание?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -787,12 +794,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Есть ли в центре детская комната?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -813,12 +820,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Есть в фитнес-центре дресс-код?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -835,12 +842,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Можно ли приводить с собой детей на тренировки?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -857,12 +864,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Какие дополнительные правила посещения центра?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -879,12 +886,12 @@
                         <button class="accordion__button btn" type="button" data-accordion="button">
                           <span>Нужна ли медицинская справка для посещения залов и бассейна?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
-                            <svg width="22" height="22">
+                            <svg width="16" height="22">
                               <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
@@ -904,7 +911,7 @@
             </div>
           </div>
         </section>
-        <section class="reviews">
+        <section class="reviews" data-test="reviews">
           <div class="reviews__text-content">
             <h2>Отзывы</h2>
           </div>
@@ -966,7 +973,7 @@
           </div>
         </section>
       </main>
-      <footer class="footer">
+      <footer class="footer" data-test="footer">
         <div class="footer__container">
           <div class="footer__wrapper">
             <section class="form-footer">
