@@ -40,6 +40,6 @@ const breakpointsReview = {
 };
 
 export const initSliders = () => {
-  initJurySlider(loop['loopJury'], breakpointsJury);
-  initReviewSlider(loop['loopReview'], breakpointsReview);
+  initJurySlider(loop.loopJury, breakpointsJury);
+  initReviewSlider(loop.loopReview, breakpointsReview);
 };

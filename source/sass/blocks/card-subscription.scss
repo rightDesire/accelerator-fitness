@@ -14,7 +14,7 @@
 
   @include vp-1365 {
     max-width: none;
-    width: 65%; //Подгон
+    width: 65%; // Подгон
     min-width: 290px;
     min-height: 438px;
   }
@@ -110,7 +110,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 150%;
-    transform: translateX(-50%) translateY(-67%); //Подгон
+    transform: translateX(-50%) translateY(-67%); // Подгон
     z-index: -1;
 
     @include vp-767 {

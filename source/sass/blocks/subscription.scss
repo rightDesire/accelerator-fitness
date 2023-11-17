@@ -12,7 +12,7 @@
 }
 
 .subscription__container {
-  padding-top: 124px; //Подгон
+  padding-top: 124px; // Подгон
   padding-bottom: 120px;
 
   @include vp-1365 {
@@ -136,13 +136,13 @@
   position: absolute;
   right: 0;
   bottom: 0;
-  transform: translateY(30%); //Подгон
+  transform: translateY(30%); // Подгон
   object-fit: cover;
 
   @include vp-1365 {
     width: 275px;
     height: 328px;
-    transform: translateY(30%); //Подгон
+    transform: translateY(30%); // Подгон
   }
 
   @include vp-767 {

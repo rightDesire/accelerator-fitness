@@ -16,9 +16,9 @@
     <link rel="preload" href="css/style.min.css" as="style">
     <link rel="preload" href="js/vendor.min.js" as="script">
     <link rel="preload" href="js/main.min.js" as="script">
-    <link rel="preload" as="image"
+    <link rel="preload" as="image" href="img/content/hero-image-desktop@1x.webp"
       imagesrcset="img/content/hero-image-desktop@1x.webp, img/content/hero-image-desktop@2x.webp 2x" media="(min-width: 1366px)">
-    <link rel="preload" as="image"
+    <link rel="preload" as="image" href="img/content/hero-image-tablet@1x.webp"
       imagesrcset="img/content/hero-image-tablet@1x.webp, img/content/hero-image-tablet@2x.webp 2x" media="(min-width: 768px) and (max-width: 1365px)">
     <link rel="preload" href="fonts/alumni/AlumniSans-ExtraBold.woff2" as="font" crossorigin="anonymous">
     <link rel="preload" href="fonts/alumni/AlumniSans-SemiBold.woff2" as="font" crossorigin="anonymous">
@@ -100,8 +100,8 @@
               </picture>
             </div>
           </div>
-          <div class="gym__video-wrapper" data-video-wrapper>
-            <div class="gym__poster-wrapper" data-poster>
+          <div class="gym__video-wrapper" data-video-wrapper="">
+            <div class="gym__poster-wrapper" data-poster="">
               <picture>
                 <source media="(max-width: 767px)" type="image/webp" srcset="img/content/gym-poster-mobile@1x.webp 1x, img/content/gym-poster-mobile@2x.webp 2x">
                 <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/gym-poster-tablet@1x.webp 1x, img/content/gym-poster-tablet@2x.webp 2x">
@@ -111,10 +111,10 @@
                 <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/gym-poster-tablet@1x.jpg 1x, img/content/gym-poster-tablet@2x.jpg 2x">
                 <img src="img/content/gym-poster-desktop@1x.jpg" srcset="img/content/gym-poster-desktop@2x.jpg 2x" width="364" height="228" alt="Постер к видео.">
               </picture>
-              <button class="gym__video-btn" data-button type="button" aria-label="Воспроизвести.">
+              <button class="gym__video-btn" data-button="" type="button" aria-label="Воспроизвести.">
                 <span class="gym__svg-wrapper">
                   <svg width="16" height="22">
-                    <use xlink:href="img/sprite.svg#play-icon" aria-hidden="true"></use>
+                    <use href="img/sprite.svg#play-icon" aria-hidden="true"></use>
                   </svg>
                 </span>
               </button>
@@ -125,42 +125,42 @@
           <div class="subscription__container container">
             <h2 class="subscription__title section-title">Абонементы</h2>
             <div class="subscription__tabs-wrapper">
-              <ul class="subscription__list-tabs list" data-tabs>
+              <ul class="subscription__list-tabs list" data-tabs="">
                 <li class="subscription__item-tab">
-                  <button class="subscription__btn subscription__btn--active" data-tab="1-month">1 месяц</button>
+                  <button class="subscription__btn subscription__btn--active" type="button" data-tab="1-month">1 месяц</button>
                 </li>
                 <li class="subscription__item-tab">
-                  <button class="subscription__btn" data-tab="6-month">6 месяцев</button>
+                  <button class="subscription__btn" type="button" data-tab="6-month">6 месяцев</button>
                 </li>
                 <li class="subscription__item-tab">
-                  <button class="subscription__btn" data-tab="12-month">12 месяцев</button>
+                  <button class="subscription__btn" type="button" data-tab="12-month">12 месяцев</button>
                 </li>
               </ul>
             </div>
-            <ul class="subscription__cards list" data-cards>
+            <ul class="subscription__cards list" data-cards="">
               <li class="subscription__card card-subscription">
                 <h2 class="card-subscription__title">С тренером</h2>
                 <p class="card-subscription__description">12 занятий</p>
                 <p class="card-subscription__price-wrapper">
-                  <span class="card-subscription__price card-subscription__price--with-coach" data-price-with-coach>5000</span>
+                  <span class="card-subscription__price card-subscription__price--with-coach" data-price-with-coach="">5000</span>
                   <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" loading="lazy" alt="">
                 </p>
                 <a class="card-subscription__link btn" href="#">Купить абонемент</a>
               </li>
               <li class="subscription__card card-subscription card-subscription--special">
                 <h2 class="card-subscription__title">Дневной</h2>
-                <p class="card-subscription__description">с 8:00 до 17:00 </p>
+                <p class="card-subscription__description">с 8:00 до 17:00</p>
                 <p class="card-subscription__price-wrapper">
-                  <span class="card-subscription__price card-subscription__price--daytime" data-price-daytime>1700</span>
+                  <span class="card-subscription__price card-subscription__price--daytime" data-price-daytime="">1700</span>
                   <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" loading="lazy" alt="">
                 </p>
                 <a class="card-subscription__link card-subscription__link--special btn" href="#">Купить абонемент</a>
               </li>
               <li class="subscription__card card-subscription">
                 <h2 class="card-subscription__title">Полный день</h2>
-                <p class="card-subscription__description">с 8:00 до 22:00 </p>
+                <p class="card-subscription__description">с 8:00 до 22:00</p>
                 <p class="card-subscription__price-wrapper">
-                  <span class="card-subscription__price card-subscription__price--all-day" data-price-all-day>2700</span>
+                  <span class="card-subscription__price card-subscription__price--all-day" data-price-all-day="">2700</span>
                   <img class="card-subscription__symbol" src="img/svg/subscription-symbol.svg" width="30" height="42" loading="lazy" alt="">
                 </p>
                 <a class="card-subscription__link btn" href="#">Купить абонемент</a>
@@ -184,7 +184,7 @@
             <article class="competition__card card-competition">
               <div class="card-competition__wrapper">
                 <div class="card-competition__row-wrapper">
-                  <h3 class="card-competition__title">SUPER <br> GAMES</h3>
+                  <h3 class="card-competition__title">Super games</h3>
                   <dl class="card-competition__datetime">
                     <div class="card-competition__datetime-wrapper">
                       <dt class="card-competition__term">Дата</dt>
@@ -206,7 +206,7 @@
                   </dl>
                 </div>
                 <p class="card-competition__explanation">Ежегодные соревнования по CrossFit</p>
-                <a class="card-competition__link btn" href="#">заполнить заявку</a>
+                <a class="card-competition__link btn" href="#">Заполнить заявку</a>
               </div>
               <div class="card-competition__img-wrapper">
                 <picture>
@@ -224,34 +224,58 @@
           <section class="jury">
             <h3 class="jury__title section-title">Жюри</h3>
             <div class="jury__swiper-container">
-              <div class="jury-swiper swiper" data-jury-swiper>
+              <div class="jury-swiper swiper" data-jury-swiper="">
                 <div class="jury-swiper__wrapper swiper-wrapper">
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
-                          <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/jury-1-tablet@1x.webp 1x, img/content/jury-1-tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/jury-1-desktop@1x.webp 1x, img/content/jury-1-desktop@2x.webp 2x">
+                          <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-3-mobile@1x.webp 1x, img/content/jury-3-mobile@2x.webp 2x"> -->
+                          <!-- <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/jury-3-tablet@1x.webp 1x, img/content/jury-3-tablet@2x.webp 2x"> -->
+                          <source type="image/webp" srcset="img/content/jury-3-desktop@1x.webp 1x, img/content/jury-3-desktop@2x.webp 2x">
 
-                          <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
-                          <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
+                          <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-3-mobile@1x.jpg 1x, img/content/jury-3-mobile@2x.jpg 2x"> -->
+                          <!-- <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-3-tablet@1x.jpg 1x, img/content/jury-3-tablet@2x.jpg 2x"> -->
+                          <img src="img/content/jury-3-desktop@1x.jpg" srcset="img/content/jury-3-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
                         </picture>
                       </div>
-                      <h4 class="jury-card__title">Александр Пашков</h4>
+                      <h4 class="jury-card__title">Анна Павлова</h4>
                       <div class="jury-card__wrapper">
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
+                      <div class="jury-card__img-wrapper">
+                        <picture>
+                          <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-4-mobile@1x.webp 1x, img/content/jury-4-mobile@2x.webp 2x"> -->
+                          <!-- <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/jury-4-tablet@1x.webp 1x, img/content/jury-4-tablet@2x.webp 2x"> -->
+                          <source type="image/webp" srcset="img/content/jury-4-desktop@1x.webp 1x, img/content/jury-4-desktop@2x.webp 2x">
+
+                          <!-- <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-4-mobile@1x.jpg 1x, img/content/jury-4-mobile@2x.jpg 2x"> -->
+                          <!-- <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-4-tablet@1x.jpg 1x, img/content/jury-4-tablet@2x.jpg 2x"> -->
+                          <img src="img/content/jury-4-desktop@1x.jpg" srcset="img/content/jury-4-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
+                        </picture>
+                      </div>
+                      <h4 class="jury-card__title">Алексей Лавров</h4>
+                      <div class="jury-card__wrapper">
+                        <h5 class="jury-card__sub-title">CrossFit</h5>
+                        <ul class="jury-card__list">
+                          <li class="jury-card__item">Certified Level 3 Trainer</li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
+                          <li class="jury-card__item">Опыт — 6 лет</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="jury-swiper__slide jury-card swiper-slide">
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
                           <!-- <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-2-mobile@1x.webp 1x, img/content/jury-2-mobile@2x.webp 2x"> -->
@@ -268,14 +292,14 @@
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
                           <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
@@ -292,14 +316,14 @@
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
                           <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
@@ -316,14 +340,14 @@
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
                           <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
@@ -340,14 +364,14 @@
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
                           <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
@@ -364,14 +388,14 @@
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
                     </div>
                   </div>
                   <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
+                    <div class="jury-card__container" data-jury-slide="">
                       <div class="jury-card__img-wrapper">
                         <picture>
                           <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
@@ -388,31 +412,7 @@
                         <h5 class="jury-card__sub-title">CrossFit</h5>
                         <ul class="jury-card__list">
                           <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
-                          <li class="jury-card__item">Опыт — 6 лет</li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="jury-swiper__slide jury-card swiper-slide">
-                    <div class="jury-card__container" data-jury-slide>
-                      <div class="jury-card__img-wrapper">
-                        <picture>
-                          <source media="(max-width: 767px)" type="image/webp" srcset="img/content/jury-1-mobile@1x.webp 1x, img/content/jury-1-mobile@2x.webp 2x">
-                          <source media="(max-width: 1365px)" type="image/webp" srcset="img/content/jury-1-tablet@1x.webp 1x, img/content/jury-1-tablet@2x.webp 2x">
-                          <source type="image/webp" srcset="img/content/jury-1-desktop@1x.webp 1x, img/content/jury-1-desktop@2x.webp 2x">
-
-                          <source media="(max-width: 767px)" type="image/jpg" srcset="img/content/jury-1-mobile@1x.jpg 1x, img/content/jury-1-mobile@2x.jpg 2x">
-                          <source media="(max-width: 1365px)" type="image/jpg" srcset="img/content/jury-1-tablet@1x.jpg 1x, img/content/jury-1-tablet@2x.jpg 2x">
-                          <img src="img/content/jury-1-desktop@1x.jpg" srcset="img/content/jury-1-desktop@2x.jpg 2x" width="260" height="294" loading="lazy" alt="Жюри Александр Пашков.">
-                        </picture>
-                      </div>
-                      <h4 class="jury-card__title">Александр Пашков</h4>
-                      <div class="jury-card__wrapper">
-                        <h5 class="jury-card__sub-title">CrossFit</h5>
-                        <ul class="jury-card__list">
-                          <li class="jury-card__item">Certified Level 3 Trainer</li>
-                          <li class="jury-card__item">Победитель чемпионата России по CrossFit </li>
+                          <li class="jury-card__item">Победитель чемпионата России по CrossFit</li>
                           <li class="jury-card__item">Опыт — 6 лет</li>
                         </ul>
                       </div>
@@ -421,14 +421,14 @@
                 </div>
               </div>
               <div class="jury-swiper-nav">
-                <div class="jury-swiper-nav__button jury-swiper-nav__button--prev" data-jury-swiper-btn-prev>
+                <div class="jury-swiper-nav__button jury-swiper-nav__button--prev" data-jury-swiper-btn-prev="">
                   <svg width="16" height="32">
-                    <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                    <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                   </svg>
                 </div>
-                <div class="jury-swiper-nav__button jury-swiper-nav__button--next" data-jury-swiper-btn-next>
+                <div class="jury-swiper-nav__button jury-swiper-nav__button--next" data-jury-swiper-btn-next="">
                   <svg width="16" height="32">
-                    <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                    <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                   </svg>
                 </div>
               </div>
@@ -441,9 +441,7 @@
               <h2>Наши преимущества</h2>
               <ul>
                 <li class="advantages__item">
-                  <p>
-                    <span>900</span>кв/м
-                  </p>
+                  <p><span>900</span>кв/м</p>
                   <dl class="advantages__text">
                     <dt>Площадь</dt>
                     <dd>Занимайтесь без очередей и толкучки</dd>
@@ -497,7 +495,7 @@
                     <h3>Год</h3>
                     <span>4999</span>
                     <p>Безлимитный абонемент в тренажерный зал</p>
-                    <a href="#">подробнее</a>
+                    <a href="#">Подробнее</a>
                   </div>
                   <div class="card-discount__img-wrapper">
                     <picture>
@@ -514,12 +512,12 @@
                   <article class="discount__offer">
                     <h3>Месяц бесплатно</h3>
                     <p>Приведи друга, получи абонемент в подарок</p>
-                    <a href="#">подробнее</a>
+                    <a href="#">Подробнее</a>
                   </article>
                   <article class="discount__offer">
                     <h3>Скидка 20%</h3>
                     <p>Корпоративный фитнес с командой</p>
-                    <a href="#">подробнее</a>
+                    <a href="#">Подробнее</a>
                   </article>
                 </div>
               </div>
@@ -545,16 +543,16 @@
                           <span>Как стать членом фитнес-центра?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -567,16 +565,16 @@
                           <span>Где можно посмотреть расписание?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -589,16 +587,16 @@
                           <span>Есть кулеры в центре? Предоставляются полотенца?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -611,16 +609,16 @@
                           <span>Сколько тренеров работает в клубе и какова их квалификация?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -637,16 +635,16 @@
                           <span>Занятия с тренером входят в абонемент?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При посещении тренажерного зала вам необходимо оплатить занятия с тренером отдельно. В зале всегда присутствует дежурный тренер, которому можно задать вопрос,  получить небольшую консультацию по тренажеру или технике выполнения упражнения.
@@ -659,16 +657,16 @@
                           <span>Можно ли заморозить абонемент?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -681,16 +679,16 @@
                           <span>Есть ли лимит по посещениям тренажерного зала и групповых занятий?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -703,16 +701,16 @@
                           <span>Что такое семейный доступ и доступ для друзей?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -729,16 +727,16 @@
                           <span>Предлагает ли клуб услуги по консультированию по вопросам питания?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               Да. Вы можете обратиться как к своему тренеру, так и к нашему нутрициологу. Специалист уточнит ваши данные, цели и предложит программу питания.
@@ -751,16 +749,16 @@
                           <span>Проводятся ли в клубе какие-либо мероприятия или соревнования?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -773,16 +771,16 @@
                           <span>Можно ли приобрести в центре спортивное питание?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -795,16 +793,16 @@
                           <span>Есть ли в центре детская комната?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -821,16 +819,16 @@
                           <span>Есть в фитнес-центре дресс-код?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               Для тренировок необходимо иметь предназначенную для этого закрытую спортивную обувь и одежду. Верхняя и нижняя части тела должны быть закрыты (используйте футболки, майки, спортивные брюки, шорты, кроссовки). В целях безопасности, запрещается тренироваться босиком, в пляжных или домашних тапочках и т. п., исключения составляют специальные классы (например, йога, пилатес).
@@ -843,16 +841,16 @@
                           <span>Можно ли приводить с собой детей на тренировки?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -865,16 +863,16 @@
                           <span>Какие дополнительные правила посещения центра?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -887,16 +885,16 @@
                           <span>Нужна ли медицинская справка для посещения залов и бассейна?</span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--close">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#plus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#plus" aria-hidden="true"></use>
                             </svg>
                           </span>
                           <span class="accordion__svg-wrapper accordion__svg-wrapper--open">
                             <svg width="16" height="22">
-                              <use xlink:href="img/sprite.svg#minus" aria-hidden="true"></use>
+                              <use href="img/sprite.svg#minus" aria-hidden="true"></use>
                             </svg>
                           </span>
                         </button>
-                        <div class="accordion__content" data-accordion="content" style="max-height: 0px;">
+                        <div class="accordion__content" data-accordion="content">
                           <div class="accordion__wrapper">
                             <p>
                               При первом посещении и покупке абонемента, необходимо заполнить анкету и подписать договор. При покупке абонемента онлайн, анкета также заполняется онлайн и договор придет вам на почту.
@@ -916,10 +914,10 @@
             <h2>Отзывы</h2>
           </div>
           <div class="reviews__swiper-container">
-            <div class="reviews-swiper swiper" data-reviews-swiper>
+            <div class="reviews-swiper swiper" data-reviews-swiper="">
               <div class="reviews-swiper__wrapper swiper-wrapper">
                 <div class="reviews-swiper__slide reviews-card swiper-slide">
-                  <div class="reviews-card__container" data-reviews-slide>
+                  <div class="reviews-card__container" data-reviews-slide="">
                     <div class="reviews-card__img-wrapper">
                       <picture>
                         <source media="(max-width: 767px)" type="image/webp" srcset="img/content/reviews-1-mobile@1x.webp 1x, img/content/reviews-1-mobile@2x.webp 2x">
@@ -938,7 +936,7 @@
                   </div>
                 </div>
                 <div class="reviews-swiper__slide reviews-card swiper-slide">
-                  <div class="reviews-card__container" data-reviews-slide>
+                  <div class="reviews-card__container" data-reviews-slide="">
                     <div class="reviews-card__img-wrapper">
                       <picture>
                         <source media="(max-width: 767px)" type="image/webp" srcset="img/content/reviews-1-mobile@1x.webp 1x, img/content/reviews-1-mobile@2x.webp 2x">
@@ -959,14 +957,14 @@
               </div>
             </div>
             <div class="reviews-swiper-nav">
-              <div class="reviews-swiper-nav__button reviews-swiper-nav__button--prev" data-reviews-swiper-btn-prev>
+              <div class="reviews-swiper-nav__button reviews-swiper-nav__button--prev" data-reviews-swiper-btn-prev="">
                 <svg width="16" height="32">
-                  <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                  <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
-              <div class="reviews-swiper-nav__button reviews-swiper-nav__button--next" data-reviews-swiper-btn-next>
+              <div class="reviews-swiper-nav__button reviews-swiper-nav__button--next" data-reviews-swiper-btn-next="">
                 <svg width="16" height="32">
-                  <use xlink:href="img/sprite.svg#arrow" aria-hidden="true"></use>
+                  <use href="img/sprite.svg#arrow" aria-hidden="true"></use>
                 </svg>
               </div>
             </div>
@@ -984,16 +982,19 @@
                     <div class="form-footer__wrapper">
                       <div class="form-footer__input custom-input" data-validate-type="text" data-limitation="name" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-required="">
                         <label>
+                          <span class="visually-hidden">Имя</span>
                           <input type="text" id="user-name" name="user-name" placeholder="Имя">
                         </label>
                       </div>
-                      <div class="form-footer__input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно" data-required="" data-phone-length="18">
+                      <div class="form-footer__input custom-input" data-validate-type="phone" data-on-input-validate="" data-message-base="Поле обязательно к заполнению" data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
+                        data-required="" data-phone-length="18">
                         <label>
+                          <span class="visually-hidden">Телефон</span>
                           <input type="tel" id="user-phone" name="user-phone" placeholder="Телефон">
                         </label>
                       </div>
                     </div>
-                    <button class="form-footer__submit btn" type="submit"><span>отправить</span></button>
+                    <button class="form-footer__submit btn" type="submit"><span>Отправить</span></button>
                   </form>
                 </div>
               </div>
@@ -1064,27 +1065,30 @@
               <ul class="nav-footer__social-list list">
                 <li class="nav-footer__social-item nav-footer__social-item--vk">
                   <a class="nav-footer__social-link" href="#">
+                    <p class="visually-hidden">Вконтакте</p>
                     <div class="nav-footer__svg-wrapper">
                       <svg width="11" height="11">
-                        <use xlink:href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
+                        <use href="img/sprite.svg#vk-icon" aria-hidden="true"></use>
                       </svg>
                     </div>
                   </a>
                 </li>
                 <li class="nav-footer__social-item nav-footer__social-item--ok">
                   <a class="nav-footer__social-link" href="#">
+                    <p class="visually-hidden">Одноклассники</p>
                     <div class="nav-footer__svg-wrapper">
                       <svg width="11" height="11">
-                        <use xlink:href="img/sprite.svg#ok-icon" aria-hidden="true"></use>
+                        <use href="img/sprite.svg#ok-icon" aria-hidden="true"></use>
                       </svg>
                     </div>
                   </a>
                 </li>
                 <li class="nav-footer__social-item nav-footer__social-item--reddit">
                   <a class="nav-footer__social-link" href="#">
+                    <p class="visually-hidden">Реддит</p>
                     <div class="nav-footer__svg-wrapper">
                       <svg width="11" height="11">
-                        <use xlink:href="img/sprite.svg#reddit-icon" aria-hidden="true"></use>
+                        <use href="img/sprite.svg#reddit-icon" aria-hidden="true"></use>
                       </svg>
                     </div>
                   </a>

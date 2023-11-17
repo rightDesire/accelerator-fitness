@@ -1,12 +1,11 @@
 .custom-input,
 .custom-textarea {
   position: relative;
-
   display: flex;
   width: 530px;
   padding: 14px 0 28px;
 
-  @media screen and (max-width: 767px) {
+  @media screen and (width <= 767px) {
     padding: 4px 0;
     width: 100%;
   }
@@ -16,7 +15,7 @@
     align-items: center;
     width: 100%;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (width <= 767px) {
       align-items: flex-start;
       flex-direction: column;
     }
@@ -28,14 +27,12 @@
       min-height: 48px;
       margin-left: auto;
       padding: 10px;
-
       border: 1px solid rgba(#000000, 0.2);
       border-radius: 5px;
       outline: none;
-
       transition: border 0.3s ease;
 
-      @media screen and (max-width: 767px) {
+      @media screen and (width <= 767px) {
         max-width: unset;
         width: 100%;
       }
@@ -51,8 +48,8 @@
   }
 
   &__label {
-    @media screen and (max-width: 767px) {
-      margin: 0 0 18px 0;
+    @media screen and (width <= 767px) {
+      margin: 0 0 18px;
     }
   }
 
@@ -60,14 +57,11 @@
     position: absolute;
     right: 0;
     bottom: 35px;
-
     color: #ff1553;
-
     opacity: 0;
-
     transition: opacity 0.3s ease;
 
-    @media screen and (max-width: 767px) {
+    @media screen and (width <= 767px) {
       bottom: 20px;
     }
   }
