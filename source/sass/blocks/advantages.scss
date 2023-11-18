@@ -13,12 +13,12 @@
   line-height: 24px;
 
   @include vp-1365 {
-    padding-top: 100px;
+    padding-top: 101px;
     padding-bottom: 45px;
   }
 
   @include vp-767 {
-    padding-top: 70px;
+    padding-top: 71px;
     padding-bottom: 70px;
   }
 }
@@ -37,7 +37,7 @@
   word-wrap: break-word;
 
   @include vp-1365 {
-    margin-bottom: 50px;
+    margin-bottom: 47px;
     font-size: 42px;
     font-weight: 600;
     line-height: 42px;
@@ -45,7 +45,7 @@
   }
 
   @include vp-767 {
-    margin-bottom: 55px;
+    margin-bottom: 54px;
     font-size: 32px;
     font-weight: 600;
     line-height: 32px;
@@ -66,7 +66,7 @@
   @include vp-1365 {
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: unset;
-    row-gap: 40px;
+    row-gap: 39px;
     column-gap: 50px;
     padding: 0;
   }
@@ -91,7 +91,7 @@
   @include vp-767 {
     flex-direction: column;
     align-items: center;
-    row-gap: 12px;
+    row-gap: 11px;
     padding-left: 40px;
     padding-right: 40px;
   }
@@ -115,8 +115,9 @@
       row-gap: 25px;
       grid-column: 1 / span 2;
       grid-row: 2;
-      width: 58%;
+      width: 59%;
       min-height: 262px;
+      margin-bottom: -1px;
       padding: 20px 35px;
     }
 
@@ -126,6 +127,8 @@
       min-width: 320px;
       min-height: 225px;
       margin: 0;
+      margin-top: 6px;
+      margin-bottom: 6px;
       margin-left: -15px;
       padding: 30px 70px;
       row-gap: 5px;
@@ -158,10 +161,6 @@
   line-height: 70px;
   word-wrap: break-word;
 
-  @include vp-1365 {
-    margin-bottom: 0;
-  }
-
   @include vp-767 {
     font-size: 64px;
     font-weight: 700;
@@ -179,9 +178,21 @@
   -webkit-text-fill-color: transparent;
   word-wrap: break-word;
 
+  @include vp-1365 {
+    margin-top: 2px;
+    margin-bottom: 1px;
+  }
+
   @include vp-767 {
+    margin-top: 0;
     font-size: 64px;
     line-height: 64px;
+  }
+}
+
+.advantages__item--special > span {
+  @include vp-1365 {
+    margin-bottom: 0;
   }
 }
 
@@ -197,7 +208,7 @@
   margin: 0;
 
   @include vp-767 {
-    row-gap: 12px;
+    row-gap: 8px;
     text-align: center;
   }
 
@@ -224,12 +235,16 @@
 
   @include vp-1365 {
     max-width: 100%;
+    margin-top: 2px;
+    margin-bottom: 2px;
     font-size: 20px;
     line-height: 20px;
     word-break: break-all;
   }
 
   @include vp-767 {
+    margin-top: 0;
+    margin-bottom: 5px;
     font-size: 18px;
     line-height: 20px;
     word-wrap: break-word;
@@ -264,6 +279,7 @@
   line-height: 26px;
 
   @include vp-1365 {
+    margin-bottom: unset;
     font-size: 24px;
     line-height: 24px;
   }
@@ -272,6 +288,10 @@
     font-size: 22px;
     line-height: 22px;
   }
+}
+
+.advantages__text--special dd {
+  font-weight: 400;
 }
 
 .advantages__item:nth-child(5n+4),

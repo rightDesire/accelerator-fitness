@@ -34,11 +34,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 30px;
   }
 
   @include vp-767 {
     text-align: start;
     align-items: start;
+    margin-bottom: 44px;
   }
 }
 
@@ -104,12 +106,11 @@
 
   @include vp-1365 {
     max-width: 502px;
-    margin-bottom: 36px;
   }
 
   @include vp-767 {
     max-width: calc(100vw - 30px); // Так можно?
-    margin-bottom: 50px;
+    padding-right: 11px;
     font-size: 14px;
     line-height: 22px;
   }

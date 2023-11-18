@@ -12,6 +12,7 @@
   @include vp-1365 {
     display: block;
     padding: 100px 133px;
+    padding-top: 102px;
   }
 
   @include vp-767 {
@@ -22,7 +23,7 @@
 .form-footer__title {
   max-width: 410px;
   margin: 0;
-  margin-bottom: 33px;
+  margin-bottom: 26px;
   font-family: $ff-alumni-sans;
   font-size: 54px;
   font-weight: 600;
@@ -31,7 +32,6 @@
   word-wrap: break-word;
 
   @include vp-1365 {
-    margin-bottom: 20px;
     font-size: 42px;
     line-height: 42px;
     letter-spacing: 1.26px;
@@ -64,8 +64,8 @@
 
   @include vp-767 {
     flex-direction: column;
-    gap: 20px;
-    margin-bottom: 35px;
+    gap: 35px;
+    margin-bottom: 40px;
   }
 }
 
@@ -99,13 +99,14 @@
   color: $color-default-white;
 }
 
-
 .form-footer__input label > input {
   max-width: 190px;
   min-height: unset;
   height: 36px;
   margin-left: 0;
-  padding: 10px 4px;
+  padding: 4px;
+  padding-bottom: 6px;
+  padding-left: 0px;
   color: $color-default-white;
   background-color: transparent;
   border-radius: unset;
@@ -114,22 +115,23 @@
   transition: none;
 
   @include hover {
-    padding: 10px 4px;
+    padding-left: 4px;
     border: 1px solid transparent;
     border-bottom-color: $color-default-white;
   }
 
   @include focus {
-    padding: 10px 4px;
+    padding-left: 4px;
     border: 1px solid $color-default-white;
   }
 
   @include active {
-    padding: 10px 4px;
+    padding-left: 4px;
     border: 1px solid $color-default-white;
   }
 
   &:focus-visible {
+    padding-left: 4px;
     background-color: transparent;
   }
 
@@ -146,7 +148,6 @@
   @include vp-767 {
     height: 26px;
     min-height: unset;
-    padding: 4px;
   }
 }
 
