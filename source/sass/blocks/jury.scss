@@ -1,15 +1,3 @@
-.jury {
-  margin-bottom: 120px;
-
-  @include vp-1365 {
-    margin-bottom: 100px;
-  }
-
-  @include vp-767 {
-    margin-bottom: 70px;
-  }
-}
-
 .jury__swiper-container {
   position: relative;
   width: 100%;

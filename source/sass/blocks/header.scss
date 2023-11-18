@@ -13,6 +13,10 @@
   padding-top: 30px;
   padding-bottom: 30px;
 
+  @include vp-1365 {
+    min-height: 84px;
+  }
+
   @include vp-767 {
     min-height: 54px;
     padding-top: 16px;

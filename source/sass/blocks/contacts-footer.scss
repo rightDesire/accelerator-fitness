@@ -9,14 +9,16 @@
 
 .contacts-footer__container {
   height: 100%;
-  min-height: 337px;
+  min-height: 335px;
   padding: 60px 120px;
   padding-right: 40px;
+  padding-bottom: 58px;
   color: $color-primary;
   font-family: $ff-roboto-condensed;
 
   @include vp-1365 {
     padding: 100px 133px;
+    padding-bottom: 98px;
   }
 
   @include vp-767 {

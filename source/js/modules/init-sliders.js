@@ -18,11 +18,13 @@ const breakpointsJury = {
   },
   [vpTablet]: {
     slidesPerView: 2,
+    initialSlide: 2,
     spaceBetween: 32,
     allowTouchMove: true,
   },
   [vpMobile]: {
     slidesPerView: 1,
+    initialSlide: 2,
     spaceBetween: 0,
     allowTouchMove: true,
   },
