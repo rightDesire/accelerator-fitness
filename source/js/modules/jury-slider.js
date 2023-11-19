@@ -11,7 +11,7 @@ export const initJurySlider = (isLoop, breakpointSettings) => {
 
     const slideOnClick = (event) => {
       const slideActiveContainer = event.target.closest('[data-jury-slide-container]');
-      // Убедиться, что событие click обрабатывается только при клике на сам элемент
+      // Убеждаемся, что событие click обрабатывается только при клике на сам элемент
       if (slideActiveContainer) {
         const slideActiveWrapper = slideActiveContainer.querySelector('[data-jury-slide-content]');
         // Меняем стили в зависимости от нажатия на активный/неактивный слайд
