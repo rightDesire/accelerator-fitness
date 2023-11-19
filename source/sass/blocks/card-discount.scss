@@ -87,10 +87,11 @@
   }
 }
 
-.card-discount__wrapper a {
+.card-discount__button a {
   width: max-content;
   max-width: 190px;
   margin-top: auto;
+  margin-left: -10px;
   padding: 10px;
   color: $color-default-white;
   border: 1px solid transparent;
@@ -101,7 +102,6 @@
   text-transform: uppercase;
   text-decoration: underline;
   word-wrap: break-word;
-  transform: translateX(-10px);
 
   @include hover {
     opacity: 0.8;
@@ -116,7 +116,8 @@
     opacity: 1;
   }
 
-  &:disabled {
+  &:disabled,
+  &--disabled {
     opacity: 0.3;
   }
 
@@ -128,10 +129,6 @@
     max-width: 100%;
     transform: unset;
   }
-}
-
-.card-discount__wrapper .link-disabled {
-  opacity: 0.3;
 }
 
 .card-discount__img-wrapper img {

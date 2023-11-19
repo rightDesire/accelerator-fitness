@@ -147,6 +147,7 @@
   width: max-content;
   max-width: 190px;
   margin-top: auto;
+  margin-left: -10px;
   padding: 10px;
   color: $color-resolution-blue;
   border: 1px solid transparent;
@@ -157,7 +158,6 @@
   text-transform: uppercase;
   text-decoration: underline;
   word-wrap: break-word;
-  transform: translateX(-10px);
 
   @include hover {
     opacity: 0.8;

@@ -61,15 +61,17 @@ const subscriptionPrice = () => {
   };
 
   const onTabClick = (event) => {
-    // Удаляет у всех табов класс active
-    tabsArray.forEach((tab) => {
-      tab.classList.remove('subscription__btn--active');
-    });
+    if (!event.target.classList.contains('subscription__btn--active')) {
+      // Удаляет у всех табов класс active
+      tabsArray.forEach((tab) => {
+        tab.classList.remove('subscription__btn--active');
+      });
 
-    // Добавляет табу, на который был совершен клик, класс
-    event.target.classList.add('subscription__btn--active');
+      // Добавляет табу, на который был совершен клик, класс
+      event.target.classList.add('subscription__btn--active');
 
-    priceChange(event.target);
+      priceChange(event.target);
+    }
   };
 
   setPrice('oneMonth');

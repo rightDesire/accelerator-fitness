@@ -33,11 +33,6 @@
     justify-content: center;
     background-color: rgba(16, 38, 84, 0.89);
   }
-
-  @include active {
-    justify-content: center;
-    background-color: rgba(16, 38, 84, 0.89);
-  }
 }
 
 .jury-card__img-wrapper {
@@ -76,6 +71,7 @@
   text-align: center;
   word-wrap: break-word;
   order: 2;
+  pointer-events: none;
 }
 
 .jury-card__sub-title {
@@ -118,6 +114,7 @@
   align-items: center;
   opacity: 0;
   order: 1;
+  pointer-events: none;
 }
 
 @media (hover: hover) {
@@ -128,11 +125,6 @@
 }
 
 .jury-card__container.focus-visible:focus .jury-card__wrapper {
-  opacity: 1;
-  order: 3;
-}
-
-.jury-card__container:active:not(.focus-visible) .jury-card__wrapper {
   opacity: 1;
   order: 3;
 }

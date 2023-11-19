@@ -11,8 +11,17 @@ const gymVideo = () => {
     iframe.title = 'Видео из тренажерного зала.';
     iframe.style.display = 'none';
 
+    // Показываем индикатор загрузки
+    const loadingIndicator = document.createElement('div');
+    loadingIndicator.textContent = 'Загрузка видео...';
+    loadingIndicator.style.maxWidth = '364px';
+    videoContainer.appendChild(loadingIndicator);
+
     // Добавляем слушатель события "load" к iframe
     iframe.addEventListener('load', () => {
+      // После загрузки видео скрываем индикатор загрузки
+      loadingIndicator.remove();
+
       iframe.style.display = 'block';
       // После загрузки видео скрываем videoPoster и videoButton
       videoPoster.style.display = 'none';
