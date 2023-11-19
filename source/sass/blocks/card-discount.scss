@@ -27,7 +27,7 @@
   @include vp-767 {
     width: unset;
     align-items: center;
-    padding-bottom: 40px;
+    padding-bottom: 52px;
   }
 }
 
@@ -52,7 +52,7 @@
   }
 }
 
-.card-discount__wrapper span {
+.card-discount__wrapper > span {
   display: block;
   max-width: 190px;
   margin-bottom: 25px;
@@ -87,11 +87,18 @@
   }
 }
 
+.card-discount__button {
+  margin-top: auto;
+  transform: translateX(-10px);
+
+  @include vp-767 {
+    transform: unset;
+  }
+}
+
 .card-discount__button a {
   width: max-content;
   max-width: 190px;
-  margin-top: auto;
-  margin-left: -10px;
   padding: 10px;
   color: $color-default-white;
   border: 1px solid transparent;
@@ -121,14 +128,15 @@
     opacity: 0.3;
   }
 
-  @include vp-1365 {
-    transform: translateX(-10px) translateY(10px);
-  }
-
   @include vp-767 {
-    max-width: 100%;
     transform: unset;
   }
+}
+
+.card-discount__button a > span {
+  display: inline-block;
+  max-width: 190px;
+  word-wrap: break-word;
 }
 
 .card-discount__img-wrapper img {
