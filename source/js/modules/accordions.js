@@ -108,7 +108,7 @@ export class Accordions {
     this.updateAccordionsHeight();
   }
 
-  openAccordion(element, transition = false) {
+  openAccordion(element, transition = true) {
     const parentElement = element.closest('[data-accordion="parent"]');
     const contentElement = element.querySelector('[data-accordion="content"]');
     this._openHeight += contentElement.scrollHeight;
@@ -136,7 +136,7 @@ export class Accordions {
     this._openHeight = 0;
   }
 
-  closeAccordion(element, transition = false) {
+  closeAccordion(element, transition = true) {
     const contentElement = element.querySelector('[data-accordion="content"]');
     if (!contentElement) {
       return;
